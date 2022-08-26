@@ -15,7 +15,7 @@ class MyDocument extends Document {
         
           <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
         </Head>
-        <body className='dark:bg-slate-800'>
+        <body className='dark:bg-slate-800 '>
           <Main />
           <NextScript />
         </body>

@@ -30,7 +30,9 @@ function Home(props) {
 
       {/*          
               <Hero/>
-   */}
+                            */}
+
+            <h1 className="text-center text-4xl my-64">PyconTz</h1>
     </>
   );
 }
