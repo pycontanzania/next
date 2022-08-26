@@ -29,7 +29,7 @@ const navLinks = [
 
 function NavLinksLg(props) {
   return (
-    <nav className="hidden sm:flex gap-x-8 font-base font-semibold">
+    <nav className="hidden lg:flex gap-x-8 font-base font-semibold">
       {navLinks.map((link) => (
         <Link key={link.name} href={link.path}>
           <a className="capitalize">{link.name}</a>

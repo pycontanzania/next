@@ -7,21 +7,20 @@ function ThemeToggler({open, setOpen}) {
   return (
     <div className="flex gap-x-4">
       <span onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-        {theme === "light" ? <FiMoon /> : <FiSun />}
+        {theme === "light" ? <FiMoon className="text-2xl" /> : <FiSun className="text-2xl"  />}
       </span>
-      <span className="inline-block sm:hidden" onClick={() => setOpen(!open)}>
-        {open ? <FiX /> : <FiMenu />}
+      <span className="inline-block lg:hidden" onClick={() => setOpen(!open)}>
+        {open ? <FiX className="text-2xl" /> : <FiMenu className="text-2xl"  />}
       </span>
     </div>
   );
 }
 
 function MenuToggler({open, setOpen}) {
-
   return (
     <div>
-      <span className="inline-block sm:hidden" onClick={() => setOpen(!open)}>
-        <FiX />
+      <span className="inline-block lg:hidden" onClick={() => setOpen(!open)}>
+        <FiX className="text-2xl"  />
       </span>
     </div>
   );

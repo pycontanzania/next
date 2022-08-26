@@ -42,33 +42,33 @@ const socials = [
   {
     name: "Telegram",
     link: "https://t.me/joinchat/JVIj_0D4zRIzNjg0",
-    icon: <FaTelegramPlane className="text-sky-600 text-2xl md:text-3xl" />,
+    icon: <FaTelegramPlane className="text-sky-600 text-2xl" />,
   },
   {
     name: "Twitter",
     link: "https://twitter.com/PyconTanzania",
-    icon: <FaTwitter className="text-blue-700 text-2xl md:text-3xl" />,
+    icon: <FaTwitter className="text-blue-700 text-2xl" />,
   },
   {
     name: "Instagram",
     link: "https://instagram.com/pycon.tanzania",
-    icon: <FaInstagram className="text-red-500 text-2xl md:text-3xl" />,
+    icon: <FaInstagram className="text-red-500 text-2xl" />,
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/company/pycontanzania",
-    icon: <FaLinkedin className="text-sky-500 text-2xl md:text-3xl" />,
+    icon: <FaLinkedin className="text-sky-500 text-2xl" />,
   },
   {
     name: "Github",
     link: "https://github.com/pycontanzania",
-    icon: <FaGithub className="text-sky-400 text-2xl md:text-3xl" />,
+    icon: <FaGithub className="text-sky-400 text-2xl" />,
   },
   {
     name: "Facebook",
     link: "https://www.facebook.com/pycontanzania",
     icon: (
-      <FaFacebookF className="text-gray-700 dark:text-gray-200 text-2xl md:text-3xl" />
+      <FaFacebookF className="text-gray-700 dark:text-gray-200 text-2xl" />
     ),
   },
 ];

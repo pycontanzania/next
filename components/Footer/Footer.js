@@ -49,7 +49,7 @@ function Footer(props) {
         <Newsletter />
       </div>
 
-      <div className="flex flex-col mt-16 gap-y-8 lg:flex-row lg:justify-between">
+      <div className="flex flex-col mt-16 mb-4 gap-y-8 lg:flex-row lg:justify-between">
         <div className="sm:flex sm:justify-center">
           <Link className="text-lg font-light" href="/">
             <a>
