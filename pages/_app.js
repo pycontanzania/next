@@ -7,7 +7,14 @@ import Layout from "../components/Layout";
 //CSS
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, ...appProps }) {
+  if ([`/404`].includes(appProps.router.pathname))
+    return (
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    );
+
   return (
     <ThemeProvider attribute="class">
       <Layout>
