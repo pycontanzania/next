@@ -16,21 +16,24 @@ function Footer(props) {
           <p className="text-lg text-gray-600 dark:text-gray-300">
             PyCon Tanzania follows other
             <span className="mx-2">
-              <a
-                className="text-sky-400 hover:text-blue-500"
-                href="https://pycon.org"
-                aria-label="pycon.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Python Conferences
-              </a>
+              <Link href="https://pycon.org">
+                <a
+                  className="text-blue-500 hover:text-sky-500"
+                  aria-label="pycon.org"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Python Conferences
+                </a>
+              </Link>
             </span>
             | Organized by the
             <span className="mx-2">
-              <a className="text-sky-400  hover:text-blue-500" href="/">
-                Python User Group
-              </a>
+              <Link href="https://mail.python.org/mailman3/lists/tanzania.python.org/">
+                <a className="text-blue-500 hover:text-sky-500">
+                  Python User Group
+                </a>
+              </Link>
             </span>
           </p>
         </div>
@@ -58,7 +61,6 @@ function Footer(props) {
             </a>
           </Link>
         </div>
-
         <Socials />
       </div>
     </footer>
