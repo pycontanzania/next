@@ -1,7 +1,9 @@
+import Carousel from "./Carousel";
+
 function Hero(props) {
   return (
     <section className="my-20 grid md:grid-cols-2">
-      <div className="text-content">
+      <div className="self-center text-content">
         <h1 className="uppercase font-bold text-green-700 tracking-wide">
           Karibu Pycon Tanzania
         </h1>
@@ -15,6 +17,7 @@ function Hero(props) {
           advancement of technology.
         </p>
 
+
         {/* CTA's */}
         <div className="my-8">
           <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 mr-6 rounded">
@@ -25,8 +28,11 @@ function Hero(props) {
           </button>
         </div>
       </div>
-      <div className="image-slides">
-          
+
+
+      {/* Carousel */}
+      <div className="hidden md:block">
+          <Carousel/>
       </div>
     </section>
   );
