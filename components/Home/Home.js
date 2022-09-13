@@ -2,8 +2,9 @@ import Head from "next/head";
 
 //components
 import Hero from "./Hero";
+import Speakers from "./Speakers";
 
-function Home(props) {
+function Home() {
   return (
     <>
       <Head>
@@ -27,6 +28,8 @@ function Home(props) {
 
                
       <Hero/>
+
+      <Speakers />
                             
     </>
   );

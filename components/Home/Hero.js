@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 
 function Hero(props) {
   return (
-    <section className="my-20 grid md:grid-cols-2">
+    <section className="my-14 md:my-20 grid md:grid-cols-2">
       <div className="self-center text-content">
         <h1 className="uppercase font-bold text-green-700 tracking-wide">
           Karibu Pycon Tanzania
