@@ -82,7 +82,7 @@ function Speakers() {
     return (
       <section>
          <h1 className="text-4xl font-bold text-center">Speakers</h1>
-         <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto" />
+         <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
 
           <div className="my-20 grid place-items-center gap-8 sm:grid-cols-2 md:grid-cols-3">
           {speakers.map(speaker => (

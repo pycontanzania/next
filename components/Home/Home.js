@@ -2,6 +2,7 @@ import Head from "next/head";
 
 //components
 import Hero from "./Hero";
+import Programme from "./Programme";
 import Speakers from "./Speakers";
 
 function Home() {
@@ -30,6 +31,8 @@ function Home() {
       <Hero/>
 
       <Speakers />
+
+      <Programme />
                             
     </>
   );
