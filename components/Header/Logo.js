@@ -4,7 +4,7 @@ function Logo(props) {
   return (
     <div>
       <Link href="/">
-        <a className="font-fancy text-xl">PyconTz</a>
+         <a className="font-base font-semibold">Pycon Tz</a>
       </Link>
     </div>
   );

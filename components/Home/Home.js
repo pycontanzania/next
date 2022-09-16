@@ -18,14 +18,14 @@ function Home() {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://next-pycon.vercel.app/" />
           <meta property="og:description" content="The official website of Pycon Tanzania" />
-          {/* <meta property="og:image" content="https://albertsigsbert.netlify.app/og/home.png" /> */}
+          <meta property="og:image" content="https://next-pycon.vercel.app/screenshots/home.png" />
 
           {/* Twitter Meta */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@PyconTanzania" />
           <meta name="twitter:title" content="Pycon Tanzania" />
           <meta name="twitter:description" content="The official website of Pycon Tanzania" />
-          {/* <meta name="twitter:image" content="https://albertsigsbert.netlify.app/og/home.png" /> */}
+          <meta name="twitter:image" content="https://next-pycon.vercel.app/screenshots/home.png" />
       </Head>
 
                
