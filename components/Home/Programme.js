@@ -1,7 +1,7 @@
 function Programme(props) {
   return (
     <section>
-      <h1 className="text-4xl font-bold text-center">The Programme</h1>
+      <h1 className="text-4xl font-bold font-base text-center">The Programme</h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
 
       <div className="my-20 grid lg:grid-cols-2 gap-16">
