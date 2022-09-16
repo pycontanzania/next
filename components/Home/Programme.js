@@ -29,7 +29,7 @@ function Programme(props) {
             <h1 className="text-2xl font-semibold font-base mb-4">Conference Day</h1>
             <p className="font-base text-xl">
               Various 25min long, technical presentations selected through a CfP
-              process that're related to projects using Python Language
+              process that&apos;re related to projects using Python Language
             </p>
           </div>
           <div>
