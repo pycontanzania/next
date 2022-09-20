@@ -7,7 +7,7 @@ const navLinks = [
   },
   {
     name: "speak",
-    path: "/speak",
+    path: "/speaker",
   },
   {
     name: "timetable",

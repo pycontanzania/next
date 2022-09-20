@@ -13,15 +13,8 @@ function NotFound(props) {
 
         <h1 className="text-green-600 text-xl font-bold">404</h1>
         <h2 className="text-gray-900 dark:text-gray-300 text-4xl md:text-6xl font-semibold md:font-bold my-4">Page Not Found</h2>
-        <p className="text-gray-600 dark:text-gray-400 w-4/5 md:w-full text-lg mx-auto my-4">Sorry, we couldn&apos;t find the page your looking for.</p>
+        <p className="text-gray-600 dark:text-gray-400 w-4/5 md:w-full text-xl mx-auto my-4">Sorry, we couldn&apos;t find the page your looking for.</p>
 
-        <div className="relative w-32 h-24 mx-auto">
-          <Image priority src={LogoImage} layout="fill" objectFit="contain" alt="PyCon Logo"/>
-        </div>
-
-        <h1 className="text-green-600 text-xl font-bold">404</h1>
-        <h2 className="text-4xl font-semibold my-4">Page Not Found</h2>
-        <p className="w-4/5 mx-auto my-4">Sorry, we couldn&apos;t find the page your looking for.</p>
 
         <Link href="/">
           <a className="text-green-600">
