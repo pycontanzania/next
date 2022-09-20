@@ -1,12 +1,9 @@
 
 
 export async function getAllSpeakers(){
-//    const response = await fetch('https://randomuser.me/api/?results=10');
-//    const data = response.json();
+   const response = await fetch('http://pycon.fuadhabib.xyz/speakers');
+   const data = response.json();
 
-//    return data;
-
-      return [];
-
-  
+   return data;
+ 
 }

@@ -6,7 +6,7 @@ import Jumbotron from "./Jumbotron";
 import Programme from "./Programme";
 import Speakers from "./Speakers";
 
-function Home() {
+function Home({speakers}) {
   return (
     <>
       <Head>
@@ -31,7 +31,7 @@ function Home() {
                
       <Hero/>
 
-      <Speakers />
+      <Speakers speakers={speakers} />
 
       <Programme />
 
