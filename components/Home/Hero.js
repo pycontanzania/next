@@ -1,6 +1,6 @@
 import Carousel from "./Carousel";
 
-function Hero(props) {
+function Hero({gallery}) {
   return (
     <section className="my-14 md:my-20 grid md:grid-cols-2">
       <div className="self-center text-content">
@@ -32,7 +32,7 @@ function Hero(props) {
 
       {/* Carousel */}
       <div className="hidden md:block">
-          <Carousel/>
+          <Carousel gallery={gallery}/>
       </div>
     </section>
   );

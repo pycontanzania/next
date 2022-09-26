@@ -7,3 +7,11 @@ export async function getAllSpeakers(){
    return data;
  
 }
+
+export async function getGalleryImages(){
+   const response = await fetch('http://pycon.fuadhabib.xyz/gallery');
+   const data = response.json();
+
+   return data;
+ 
+}

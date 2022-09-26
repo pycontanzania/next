@@ -6,7 +6,7 @@ import Jumbotron from "./Jumbotron";
 import Programme from "./Programme";
 import Speakers from "./Speakers";
 
-function Home({speakers}) {
+function Home({speakers, gallery}) {
   return (
     <>
       <Head>
@@ -29,7 +29,7 @@ function Home({speakers}) {
       </Head>
 
                
-      <Hero/>
+      <Hero gallery={gallery}/>
 
       <Speakers speakers={speakers} />
 
