@@ -1,3 +1,5 @@
+import Ticket from "./Ticket";
+
 const calenderSVG = () => {
   return (
     <svg
@@ -73,6 +75,7 @@ function Timeline(props) {
           </li>
         </ol>
       </div>
+      <Ticket />
     </aside>
   );
 }
