@@ -1,4 +1,3 @@
-
 import Header from './Header/Header';
 import Footer from './Footer/Footer'
 
@@ -6,7 +5,7 @@ import Footer from './Footer/Footer'
   return (
     <>
       <Header/>
-      <main className='mx-[6%] my-8 '>{children}</main>
+      <main className='mx-[6%] my-8'>{children}</main>
       <Footer />
     </>
   )

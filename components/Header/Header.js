@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 
 //Components
-import Logo from "./Logo";
+import Logo from "../UI/Logo";
 import { NavLinks, NavLinksLg } from "./NavLinks";
 import { ThemeToggler, MenuToggler } from "./Togglers";
-
 
 function Header(props) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
- 
+
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
@@ -17,7 +16,7 @@ function Header(props) {
   return (
     <>
       <header className="mx-[6%] my-8 flex flex-wrap justify-between">
-        <Logo/>
+        <Logo />
         <NavLinksLg />
         <ThemeToggler open={open} setOpen={setOpen} />
       </header>
@@ -26,8 +25,8 @@ function Header(props) {
       {open && (
         <header className="fixed inset-0 z-10 bg-gray-100 dark:bg-slate-700 drop-shadow-xl">
           <div className="mx-[6%] my-8 flex justify-between">
-            <Logo/>
-            <MenuToggler open={open} setOpen={setOpen}/>
+            <Logo />
+            <MenuToggler open={open} setOpen={setOpen} />
           </div>
           <NavLinks />
         </header>
