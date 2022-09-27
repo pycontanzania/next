@@ -1,7 +1,16 @@
 import { useState, useEffect } from "react";
 
+
 function Countdown(props) {
-  const counter =  () => {
+  const [days,setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [mins, setMins] = useState(0);
+  const [secs, setSecs] = useState(0);
+
+  const [mounted, setMounted] = useState(false);
+
+
+  const counter = () => {
     const eventDate = new Date("Dec 5, 2022 07:00:00").getTime();
     const now = new Date().getTime();
 
@@ -19,22 +28,31 @@ function Countdown(props) {
     const totalMins = Math.floor((gap % hour) / minute);
     const totalSecs = Math.floor((gap % minute) / second);
 
-    return {
-      days: totalDays,
-      hours: totalHours,
-      mins: totalMins,
-      secs: totalSecs,
-    };
+    setDays(totalDays);
+    setHours(totalHours);
+    setMins(totalMins);
+    setSecs(totalSecs);
+
   };
 
-  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
 
-  useEffect(() => setMounted(true), []);
+    //Running counter on 1st render
+    counter();
+
+    //Updating counter every second
+    const interval = setInterval(() => {
+      counter()
+    },1000);
+
+    return () => clearInterval(interval)
+
+  }, []);
 
   if (!mounted) return null;
 
 
-  const { days, hours, mins, secs } = counter();
   return (
     <div>
       <p className="text-gray-400 font-medium">

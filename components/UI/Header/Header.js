@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 //Components
-import Logo from "../UI/Logo";
+import Logo from "../Logo";
 import { NavLinks, NavLinksLg } from "./NavLinks";
 import { ThemeToggler, MenuToggler } from "./Togglers";
 
