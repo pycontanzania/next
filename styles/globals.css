@@ -7,3 +7,23 @@
     max-height: 500px;
     width: 80%;
 }
+
+/* Transitions */
+.slide-horizontal-enter{
+    opacity: 0;
+    transform: translateX(-5%);
+}
+.slide-horizontal-enter-active{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+}
+.slide-horizontal-exit{
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-horizontal-exit-active{
+    opacity: 0;
+    transition: all 500ms;
+    transform: translateX(-5%);
+}
