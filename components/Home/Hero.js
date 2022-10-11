@@ -19,7 +19,7 @@ function Hero({gallery}) {
 
 
         {/* CTA's */}
-        <div className="my-8">
+        <div className="my-8 flex gap-4 flex-wrap">
           <button className="font-base bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 mr-6 rounded">
             Buy Tickets
           </button>
