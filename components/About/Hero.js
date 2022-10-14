@@ -31,13 +31,13 @@ function Hero(props) {
           </p>
 
           <h2 className="font-bold text-2xl">Pycon 2022</h2>
-          <div className="my-4 flex flex-wrap items-center gap-4 sm:gap-16">
+          <div className="my-4 flex flex-wrap items-center gap-16 md:gap-8">
             <div className="flex items-center">
-              <div className="my-4 mr-4 inline-flex items-center p-3  text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+              <div className="mr-4 inline-flex items-center p-3  text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                 <HiCalendar className="w-6 h-6" />
               </div>
-              <div className="font-base  text-gray-500  dark:text-gray-400">
-                <h3>Date & Time</h3>
+              <div className="font-base text-gray-500  dark:text-gray-400">
+                <h3 className="font-semibold">Date & Time</h3>
                 <p>05 - 19 Dec 2022, 08:00 AM to 05:00PM</p>
               </div>
             </div>
@@ -46,9 +46,9 @@ function Hero(props) {
               <div className="my-4 mr-4 inline-flex items-center p-3  text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
                 <HiLocationMarker className="w-6 h-6" />
               </div>
-              <div className="font-base  text-gray-500  dark:text-gray-400">
-                <h3>Location</h3>
-                <p>UDOM</p>
+              <div className="font-base text-gray-500  dark:text-gray-400">
+                <h3 className="font-semibold">Location</h3>
+                <p>State University of Zanzibar Auditorium(SUZA), Zanzibar</p>
               </div>
             </div>
           </div>

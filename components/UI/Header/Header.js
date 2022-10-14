@@ -28,7 +28,7 @@ function Header(props) {
             <Logo />
             <MenuToggler open={open} setOpen={setOpen} />
           </div>
-          <NavLinks />
+          <NavLinks open={open} setOpen={setOpen} />
         </header>
       )}
     </>

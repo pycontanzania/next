@@ -39,12 +39,12 @@ function NavLinksLg(props) {
   );
 }
 
-function NavLinks() {
+function NavLinks({open, setOpen}) {
   return (
     <nav className="mx-[6%] my-16 h-full w-1/2 flex flex-col space-y-8 font-base font-semibold">
       {navLinks.map((link) => (
         <Link key={link.name} href={link.path}>
-          <a className="capitalize">{link.name}</a>
+          <a className="capitalize" onClick={() => setOpen(!open)}>{link.name}</a>
         </Link>
       ))}
     </nav>
