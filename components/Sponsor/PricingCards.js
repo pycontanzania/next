@@ -90,12 +90,12 @@ function PricingCard(props) {
     <div className="my-16 grid  gap-x-16 gap-y-8 grid-cols-auto-fit">
        {/* INDIVIDUAL PLAN */}
       <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h5 className="mb-4 text-xl uppercase font-medium text-gray-500 dark:text-gray-400">
+        <h5 className="mb-4 text-xl uppercase text-center font-medium text-gray-500 dark:text-gray-400">
           Individual plan
         </h5>
-        <div className="flex items-baseline text-gray-900 dark:text-white">
+        <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
           <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">49</span>
+          <span className="text-5xl font-extrabold tracking-tight">8.69</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -128,12 +128,12 @@ function PricingCard(props) {
 
          {/* BRONZE SPONSOR */}
       <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h5 className="mb-4 text-xl font-medium uppercase text-gray-500 dark:text-gray-400">
+        <h5 className="mb-4 text-xl text-center font-medium uppercase text-gray-500 dark:text-gray-400">
           Bronze Plan
         </h5>
-        <div className="flex items-baseline text-gray-900 dark:text-white">
+        <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
           <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">49</span>
+          <span className="text-5xl font-extrabold tracking-tight">500</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -165,12 +165,12 @@ function PricingCard(props) {
 
       {/* SILVER PLAN */}
       <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h5 className="mb-4 text-xl font-medium uppercase text-gray-500 dark:text-gray-400">
+        <h5 className="mb-4 text-xl text-center font-medium uppercase text-gray-500 dark:text-gray-400">
           Silver plan
         </h5>
-        <div className="flex items-baseline text-gray-900 dark:text-white">
+        <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
           <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">49</span>
+          <span className="text-5xl font-extrabold tracking-tight">1000</span>
           <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
             /month
           </span>
