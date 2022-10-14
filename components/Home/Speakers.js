@@ -17,8 +17,8 @@ function Speakers({speakers}) {
                     <h5 className="mb-1 text-xl font-medium font-base text-gray-900 dark:text-white">{speaker.name}</h5>
                     <span className="text-sm font-base text-gray-500 dark:text-gray-400">{speaker.expertise}</span>
                     <div className="flex mt-4 space-x-3 md:mt-6">
-                        <a href="#" className="inline-flex items-center py-2 px-4 text-sm font-medium font-base text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Website</a>
-                        <a href="#" className="inline-flex items-center py-2 px-4 text-sm font-medium font-base text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">View Profile</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center py-2 px-4 text-sm font-medium font-base text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Website</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center py-2 px-4 text-sm font-medium font-base text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">View Profile</a>
                     </div>
                 </div>
             </div>

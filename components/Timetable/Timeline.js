@@ -151,6 +151,7 @@ const iconSVG = () => {
     </span>
   );
 };
+
 function Timeline({ active }) {
   const nodeRef = React.useRef(null)
   return (
