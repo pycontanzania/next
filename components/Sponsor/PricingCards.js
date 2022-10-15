@@ -100,7 +100,7 @@ function PricingCard({checked}) {
           Individual plan
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className="text-xl mr-2 font-semibold">{checked ? '$' : 'TZS' }</span>
+          <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
           <span className="text-3xl font-extrabold tracking-tight">{checked ? '8.69': '20,273' }</span>
         </div>
 
@@ -138,7 +138,7 @@ function PricingCard({checked}) {
           Bronze Plan
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className="text-xl mr-2 font-semibold">{checked ? '$' : 'TZS' }</span>
+          <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
           <span className="text-3xl font-extrabold tracking-tight">{checked ? '500': '1,166,455' }</span>
         </div>
 
@@ -175,7 +175,7 @@ function PricingCard({checked}) {
           Silver plan
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className="text-xl mr-2 font-semibold">{checked ? '$' : 'TZS' }</span>
+          <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
           <span className="text-3xl font-extrabold tracking-tight">{checked ? '1,000': '2,332,910' }</span>
         </div>
 

@@ -1,4 +1,4 @@
-import Countdown from "./Countdown";
+import Countdown from "../UI/Countdown";
 
 function Hero() {
   return (

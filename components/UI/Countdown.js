@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 function Countdown(props) {
   const [days,setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -8,7 +7,6 @@ function Countdown(props) {
   const [secs, setSecs] = useState(0);
 
   const [mounted, setMounted] = useState(false);
-
 
   const counter = () => {
     const eventDate = new Date("Dec 5, 2022 07:00:00").getTime();
