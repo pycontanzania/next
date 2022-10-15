@@ -18,14 +18,17 @@ const individual = [
 
 const bronze = [
   {
+    id:1,
     status: "included",
     name: "Company logo added at PyConTZ website",
   },
   {
+    id:2,
     status: "included",
     name: "2 free conference registrations",
   },
   {
+    id:3,
     status: "excluded",
     name: "Speaking slot during the event",
   },
@@ -33,14 +36,17 @@ const bronze = [
 
 const silver = [
   {
+    id:1,
     status: "included",
     name: "Company logo added at PyConTZ website",
   },
   {
+    id:2,
     status: "included",
     name: "4 free conference registrations",
   },
   {
+    id:3,
     status: "included",
     name: "Speaking slot during the event",
   },
@@ -85,7 +91,7 @@ const uncheckedSVG = () => {
 };
 
 
-function PricingCard(props) {
+function PricingCard({checked}) {
   return (
     <div className="my-16 grid  gap-x-16 gap-y-8 grid-cols-auto-fit">
        {/* INDIVIDUAL PLAN */}
@@ -94,8 +100,8 @@ function PricingCard(props) {
           Individual plan
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">8.69</span>
+          <span className="text-xl mr-2 font-semibold">{checked ? '$' : 'TZS' }</span>
+          <span className="text-3xl font-extrabold tracking-tight">{checked ? '8.69': '20,273' }</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -108,7 +114,7 @@ function PricingCard(props) {
                 </span>
               </li>
             ) : (
-              <li className="flex space-x-3 line-through decoration-gray-500">
+              <li key={item.id} className="flex space-x-3 line-through decoration-gray-500">
                 {uncheckedSVG()}
                 <span className="text-base font-normal leading-tight text-gray-500">
                   {item.name}
@@ -132,8 +138,8 @@ function PricingCard(props) {
           Bronze Plan
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">500</span>
+          <span className="text-xl mr-2 font-semibold">{checked ? '$' : 'TZS' }</span>
+          <span className="text-3xl font-extrabold tracking-tight">{checked ? '500': '1,166,455' }</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -146,7 +152,7 @@ function PricingCard(props) {
                 </span>
               </li>
             ) : (
-              <li className="flex space-x-3 line-through decoration-gray-500">
+              <li key={item.id} className="flex space-x-3 line-through decoration-gray-500">
                 {uncheckedSVG()}
                 <span className="text-base font-normal leading-tight text-gray-500">
                   {item.name}
@@ -169,8 +175,8 @@ function PricingCard(props) {
           Silver plan
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className="text-3xl font-semibold">$</span>
-          <span className="text-5xl font-extrabold tracking-tight">1000</span>
+          <span className="text-xl mr-2 font-semibold">{checked ? '$' : 'TZS' }</span>
+          <span className="text-3xl font-extrabold tracking-tight">{checked ? '1,000': '2,332,910' }</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -183,7 +189,7 @@ function PricingCard(props) {
                 </span>
               </li>
             ) : (
-              <li className="flex space-x-3 line-through decoration-gray-500">
+              <li key={item.id} className="flex space-x-3 line-through decoration-gray-500">
                 {uncheckedSVG()}
                 <span className="text-base font-normal leading-tight text-gray-500">
                   {item.name}
