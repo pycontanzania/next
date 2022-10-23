@@ -6,7 +6,7 @@ import Jumbotron from "./Jumbotron";
 import Programme from "./Programme";
 import Speakers from "./Speakers";
 
-function Home({speakers, gallery}) {
+function Home({speakers, gallery, year="2022"}) {
   return (
     <>
       <Head>
@@ -29,7 +29,7 @@ function Home({speakers, gallery}) {
       </Head>
 
                
-      <Hero gallery={gallery}/>
+      <Hero gallery={gallery} year={year}/>
 
       <Speakers speakers={speakers} />
 

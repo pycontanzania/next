@@ -18,12 +18,16 @@ const prevEvents = [
     name: "Pycon 2020",
     link: "/events/2020",
   },
+  {
+    name: "Pycon 2021",
+    link: "/events/2021",
+  },
 ];
 
 const community = [
   {
     name: "About Us",
-    link: "/about-us",
+    link: "/about",
   },
   {
     name: "Open Source Projects",
@@ -35,7 +39,7 @@ const community = [
   },
   {
     name: "Covid Guideline",
-    link: "/covid/19",
+    link: "/covid",
   },
 ];
 
