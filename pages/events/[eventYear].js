@@ -17,7 +17,7 @@ export async function getStaticProps(context) {
 
   const numYear = Number(eventYear);
 
-  const eventSpeakers = getSpeakersByYear(numYear);
+  const eventSpeakers = await getSpeakersByYear(numYear);
 
   const gallery = await getGalleryImages();
 

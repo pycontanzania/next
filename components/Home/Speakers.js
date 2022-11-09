@@ -11,7 +11,7 @@ function Speakers({speakers}) {
             <div key={speaker.id} className="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div className="flex flex-col items-center pb-10">
                      <div className="relative my-8 h-24 w-24">
-                     <Image className="rounded-full shadow-lg" src={speaker.image} alt={speaker.name} layout="fill" objectFit='cover'/>
+                       {speaker.image && <Image className="rounded-full shadow-lg" src={speaker.image} alt={speaker.name} layout="fill" objectFit='cover'/>}
                      </div>
                    
                     <h5 className="mb-1 text-xl font-medium font-base text-gray-900 dark:text-white">{speaker.name}</h5>
