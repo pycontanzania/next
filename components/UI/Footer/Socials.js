@@ -12,15 +12,15 @@ import Discord from "./icons/discord.svg";
 const prevEvents = [
   {
     name: "Pycon 2019",
-    link: "/events/" + 2019,
+    link: "/events/2019",
   },
   {
     name: "Pycon 2020",
-    link: "/events/" + 2020,
+    link: "/events/2020",
   },
   {
     name: "Pycon 2021",
-    link: "/events/" + 2021,
+    link: "/events/2021",
   },
 ];
 

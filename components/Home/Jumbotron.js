@@ -13,7 +13,7 @@ function Jumbotron(props) {
         <div className="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
           <button
             type="button"
-            className="py-2.5 px-5 mr-2 mb-2 text-base font-bold font-base text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="py-2.5 px-5 mr-2 mb-2 text-base font-bold font-base text-gray-900 focus:outline-none bg-gray-200 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             <Link href='/covid'> Covid-19 Guidelines</Link>
            
