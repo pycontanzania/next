@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 //Images
-import LightLogo from "../../public/img/logoLight.jpg";
-import DarkLogo from "../../public/img/logoDark.jpg";
+// import LightLogo from "../../public/img/logoLight.jpg";
+// import DarkLogo from "../../public/img/logoDark.jpg";
+import defaultLogo from "../../public/logo.jpg";
 
 
 function Logo(props) {
@@ -13,13 +14,13 @@ function Logo(props) {
 
   switch (resolvedTheme) {
     case 'light':
-      src = DarkLogo
+      src = defaultLogo
       break
     case 'dark':
-      src = LightLogo
+      src = defaultLogo
       break
     default:
-      src = DarkLogo
+      src = defaultLogo
       break
   }
 
@@ -27,7 +28,7 @@ function Logo(props) {
     <div>   
       <Link href="/">
          <a>
-           <Image src={src} alt="logo" width={60} height={40}/>
+           <Image src={src} alt="logo" width={30} height={30}/>
          </a>
       </Link>
     </div>
