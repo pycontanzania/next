@@ -11,9 +11,7 @@ export async function getStaticProps() {
   const speakers = await getCurrentSpeakers();
   const gallery = await getGalleryImages();
 
-  console.log(speakers);
 
-  
   return {
     props: {
       speakers,
