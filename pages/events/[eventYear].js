@@ -6,6 +6,7 @@ function Event({speakers,gallery}) {
   const router = useRouter();
 
   const year = router.query.eventYear;
+  
   return (
       <Home speakers={speakers} gallery={gallery} year={year}/>
   );

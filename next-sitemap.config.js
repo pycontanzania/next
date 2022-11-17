@@ -13,7 +13,7 @@ module.exports = {
         additionalSitemaps: [
             `${siteUrl}sitemap.xml`,
             //FOR DYNAMIC PAGES
-            // `${siteUrl}/server-sitemap.xml`,
+            `${siteUrl}/server-sitemap.xml`,
           ]
     },
   }
