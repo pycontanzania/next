@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Home from "../../components/Home/Home";
-import { getGalleryImages, getSpeakersByYear } from "../../helpers/api-utils";
+import { getImagesByYear, getSpeakersByYear } from "../../helpers/api-utils";
 
 function Event({speakers,gallery}) {
   const router = useRouter();
@@ -20,7 +20,7 @@ export async function getStaticProps(context) {
 
   const eventSpeakers = await getSpeakersByYear(numYear);
 
-  const gallery = await getGalleryImages();
+  const gallery = await getImagesByYear(numYear);
 
   return {
     props: {

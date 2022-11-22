@@ -1,4 +1,4 @@
-import {  getCurrentSpeakers, getGalleryImages } from "../helpers/api-utils";
+import {  getCurrentImages, getCurrentSpeakers,  } from "../helpers/api-utils";
 
 //Components
 import Home from "../components/Home/Home";
@@ -9,7 +9,7 @@ function HomePage({speakers, gallery}) {
 
 export async function getStaticProps() {
   const speakers = await getCurrentSpeakers();
-  const gallery = await getGalleryImages();
+  const gallery = await getCurrentImages();
 
   return {
     props: {
