@@ -35,4 +35,32 @@ function Logo(props) {
   );
 }
 
-export default Logo;
+
+function LogoSm({open, setOpen}) {
+  const { resolvedTheme } = useTheme()
+  let src
+
+  switch (resolvedTheme) {
+    case 'light':
+      src = defaultLogo
+      break
+    case 'dark':
+      src = defaultLogo
+      break
+    default:
+      src = defaultLogo
+      break
+  }
+
+  return (
+    <div>   
+      <Link href="/">
+         <a onClick={() => setOpen(!open)}>
+           <Image src={src} alt="logo" width={30} height={30} className="rounded-lg"/>
+         </a>
+      </Link>
+    </div>
+  );
+}
+
+export {Logo,LogoSm};

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { LanguagesSm } from "./Languages";
 
 function NavLinksLg(props) {
   const router = useRouter();
   const { eventYear } = router.query;
-  
+
   const navLinks = [
     {
       name: "about",
@@ -92,7 +93,7 @@ function NavLinks({ open, setOpen }) {
   ];
 
   let filteredLinks;
- 
+
   if (!eventYear || eventYear === "2020" || eventYear === "2019") {
     filteredLinks = navLinks.filter((link) => link.name !== "report");
   } else {
@@ -117,11 +118,15 @@ function NavLinks({ open, setOpen }) {
         }
 
         return (
-          <Link key={link.name} href={link.path} onClick={() => setOpen(!open)}>
-            <a className="capitalize">{link.name}</a>
+          <Link key={link.name} href={link.path}>
+            <a className="capitalize" onClick={() => setOpen(!open)}>
+              {link.name}
+            </a>
           </Link>
         );
       })}
+
+      <LanguagesSm open={open} setOpen={setOpen} />
     </nav>
   );
 }
