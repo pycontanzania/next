@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const nextTranslate = require('next-translate');
+
 const nextConfig = {
   reactStrictMode: true,
-  i18n: {
-    locales: ['en-US', 'sw-TZ'],
-    defaultLocale: 'en-US',
-  },
   images:{
      domains:['res.cloudinary.com']
   },
@@ -21,7 +20,7 @@ const nextConfig = {
 };
 
 
-
+//PWA
 const withPWA = require("next-pwa")({
   dest: "public",
   disable: process.env.NODE_ENV === "development",
@@ -30,3 +29,5 @@ const withPWA = require("next-pwa")({
 });
 
 module.exports = withPWA(nextConfig);
+
+module.exports = nextTranslate(nextConfig);

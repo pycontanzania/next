@@ -5,30 +5,31 @@ import { LanguagesSm } from "./Languages";
 function NavLinksLg(props) {
   const router = useRouter();
   const { eventYear } = router.query;
+  const { locale } = router;
 
   const navLinks = [
     {
-      name: "about",
+      name: `${locale === 'en-US' ? 'about': 'kutuhusu'}` ,
       path: "/about",
     },
     {
-      name: "speak",
+      name: `${locale === 'en-US' ? 'speak': 'zungumza'}`,
       path: "/speaker",
     },
     {
-      name: "timetable",
+      name:`${locale === 'en-US' ? 'timetable': 'ratiba'}`,
       path: "/timetable",
     },
     {
-      name: "sponsors",
+      name:`${locale === 'en-US' ? 'sponsors': 'wafadhili'}`,
       path: "/sponsors",
     },
     {
-      name: "report",
+      name:`${locale === 'en-US' ? 'report': 'ripoti'}`,
       path: `/reports/report-${eventYear}.pdf`,
     },
     {
-      name: "code of conduct",
+      name:`${locale === 'en-US' ? 'code of conduct': 'kanuni za maadili'}`,
       path: "/coc",
     },
   ];

@@ -8,6 +8,7 @@ import Facebook from "./icons/fb.svg";
 import Github from "./icons/github.svg";
 import YouTube from "./icons/youtube.svg";
 import Discord from "./icons/discord.svg";
+import { useRouter } from "next/router";
 
 const prevEvents = [
   {
@@ -24,24 +25,7 @@ const prevEvents = [
   },
 ];
 
-const community = [
-  {
-    name: "About Us",
-    link: "/about",
-  },
-  {
-    name: "Open Source Projects",
-    link: "https://github.com/pycontanzania",
-  },
-  {
-    name: "Discord Server",
-    link: "https://discord.gg/QzwnHA3KB4",
-  },
-  {
-    name: "Covid Guideline",
-    link: "/covid",
-  },
-];
+
 
 const socials = [
   {
@@ -100,6 +84,26 @@ function Events() {
 }
 
 function Community() {
+  const router = useRouter();
+  const { locale } = router;
+  const community = [
+    {
+      name: `${locale === 'en-US' ? 'About Us': 'Kutuhusu'}`,
+      link: "/about",
+    },
+    {
+      name: `${locale === 'en-US' ?"Open Source Projects":"Miradi ya Chanzo Huria"}`,
+      link: "https://github.com/pycontanzania",
+    },
+    {
+      name: `${locale === 'en-US' ? "Discord Server":"Seva ya Discord"}`,
+      link: "https://discord.gg/QzwnHA3KB4",
+    },
+    {
+      name: `${locale === 'en-US' ?"Covid Guideline":"Mwongozo wa Covid"}`,
+      link: "/covid",
+    },
+  ];
   return (
     <ul className="text-lg text-gray-600 dark:text-gray-300">
       {community.map((com) => {

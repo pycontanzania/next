@@ -1,0 +1,23 @@
+{
+    "greeting": "Welcome Pycon Tanzania",
+    "pre-title": "The ",
+    "post-title":"annual python language conference.",
+    "intro": "For professionals, entrepreneurs, scientists and students in Tanzania, organized by the tech-community to foster collaboration and advancement of technology.",
+    "btn1":"Buy Tickets",
+    "btn2":"Become A Sponsor",
+    "speaker_title":"Speaker",
+    "speaker_website":"Website",
+    "speaker_profile":"View Profile",
+    "programme_title":"The Programme",
+    "programme_title_1":"Workshop Day",
+    "programme_desc_1":"Curated hands-on workshops exploring the fundamentals of the Python language where participants learn from mentors.",
+    "programme_title_2":"Conference Day",
+    "programme_desc_2":"Various 25min long, technical presentations selected through a CfP process that're related to projects using Python Language",
+    "programme_title_3":"Lightning Talks",
+    "programme_desc_3":"Sessions where the folks engage in informal discussions to encourage collaboration on various Python related projects.",
+    "programme_title_4":"Python Meetups",
+    "programme_desc_4":"Occasional events to bring together Python Users so as to increase collaboration among the Python language community.",
+    "jumbotron_title":"Covid-19 Travel Advice",
+    "jumbotron_info":"Please read the following resources to get more information about vaccine & test",
+    "jumbotron_btn":"Covid-19 Guidelines"
+}

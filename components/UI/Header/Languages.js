@@ -25,7 +25,7 @@ function Languages(props) {
           width={20}
           height={20}
         />
-        <span className="ml-2"> {locale === "en-US" ? "English (US)" : "Swahili (TZ)"}</span>
+        <span className="ml-2"> {locale === "en-US" ? "en-US" : "sw-TZ"}</span>
        
       </button>
 
@@ -84,7 +84,7 @@ function LanguagesSm({ open, setOpen }) {
           width={20}
           height={20}
         />
-         <span className="ml-2"> {locale === "en-US" ? "English (US)" : "Swahili (TZ)"}</span>
+         <span className="ml-2"> {locale === "en-US" ? "en-US" : "sw-TZ"}</span>
       </button>
 
       {dropdownOpen && (

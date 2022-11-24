@@ -1,0 +1,23 @@
+{
+    "greeting":"Karibu Pycon Tanzania",
+    "pre-title": "Kongamano la ",
+    "post-title":"la Kila Mwaka la Lugha ya Python. ",
+    "intro": "Kwa wataalamu, wajasiriamali, wanasayansi na wanafunzi nchini Tanzania, iliyoandaliwa na jumuiya ya teknolojia ili kukuza ushirikiano na maendeleo ya teknolojia.",
+    "btn1":"Nunua Tiketi",
+    "btn2":"Kuwa Mfadhili",
+    "speaker_title":"Wasemaji",
+    "speaker_website":"Tovuti",
+    "speaker_profile":"Wasifu",
+    "programme_title":"Programu Zitakazokuwepo",
+    "programme_title_1":"Siku ya Warsha",
+    "programme_desc_1":"Warsha za mikono zilizoratibiwa za kuchunguza misingi ya lugha ya Python ambapo washiriki hujifunza kutoka kwa washauri.",
+    "programme_title_2":"Siku ya Mkutano",
+    "programme_desc_2":"Mawasilisho mbalimbali ya muda wa dakika 25, ya kiufundi yaliyochaguliwa kupitia mchakato wa CfP unaohusiana na miradi inayotumia Lugha ya Python.",
+    "programme_title_3":"Mazungumzo Mafupi",
+    "programme_desc_3":"Vikao ambapo watu hushiriki katika mijadala isiyo rasmi ili kuhimiza ushirikiano katika miradi mbalimbali inayohusiana na Python.",
+    "programme_title_4":"Mikutano ya Python",
+    "programme_desc_4":"Matukio ya mara kwa mara ya kuleta pamoja Watumiaji wa Python ili kuongeza ushirikiano kati ya jamii ya lugha ya Python.",
+    "jumbotron_title":"Mwongozo Wa Kusafiri Kipindi cha Covid-19",
+    "jumbotron_info":"Tafadhali soma maelezo yafuatayo ili kupata maelezo zaidi kuhusu chanjo na majaribio",
+    "jumbotron_btn":"Miongozo ya Covid-19"
+}
