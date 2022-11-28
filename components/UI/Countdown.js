@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import useTranslation from "next-translate/useTranslation";
 
 function Countdown(props) {
+  const { t, lang } = useTranslation("common");
+
   const [days,setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [mins, setMins] = useState(0);
@@ -54,7 +57,7 @@ function Countdown(props) {
   return (
     <div>
       <p className="text-gray-400 font-medium">
-        Time Left until event:{" "}
+      {t("hero_countdown")}:{" "}
         <span className="text-green-600 text-2xl">
           {days}d {hours}h {mins}m {secs}s
         </span>

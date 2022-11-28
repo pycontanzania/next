@@ -28,7 +28,7 @@ function Logo(props) {
     <div>   
       <Link href="/">
          <a>
-           <Image src={src} alt="logo" width={30} height={30} className="rounded-lg"/>
+           <Image src={src} alt="logo" width={40} height={40} className="rounded-lg"/>
          </a>
       </Link>
     </div>

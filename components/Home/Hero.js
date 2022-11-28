@@ -1,5 +1,6 @@
 import Carousel from "./Carousel";
 import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
 
 function Hero({ gallery, year }) {
   const { t, lang } = useTranslation("home");
@@ -39,12 +40,19 @@ function Hero({ gallery, year }) {
         {/* CTA's */}
         {year === "2022" && (
           <div className="my-8 flex gap-4 flex-wrap">
-            <button className="font-base bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 mr-6 rounded">
+            <a 
+               href="https://wa.me/message/2DW2QWGHDACTM1"
+               aria-label="buy a ticket"
+               rel="noopener noreferrer"
+               target="_blank"
+               className="font-base bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 mr-6 rounded">
               {t("btn1")}
-            </button>
-            <button className="font-base bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            </a>
+           <Link href="/sponsors">
+             <a className="font-base bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
               {t("btn2")}
-            </button>
+            </a>
+           </Link>
           </div>
         )}
       </div>
