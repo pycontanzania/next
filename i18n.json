@@ -5,6 +5,7 @@
         "*": ["common"],
         "/": ["home"],
         "/speaker": ["speak"],
+        "/sponsors": ["sponsors"],
         "/events/[eventYear]": ["home"]
       }
 }
