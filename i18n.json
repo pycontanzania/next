@@ -5,6 +5,7 @@
         "*": ["common"],
         "/": ["home"],
         "/speaker": ["speak"],
+        "/about": ["about"],
         "/sponsors": ["sponsors"],
         "/coc":["coc"],
         "/covid":["covid"],

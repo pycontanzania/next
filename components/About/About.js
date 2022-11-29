@@ -2,6 +2,8 @@ import Hero from "./Hero";
 import CTA from "./CTA";
 import Team from "./Team";
 
+
+
 function About(props) {
   return (
       <>

@@ -1,6 +1,9 @@
 import { HiCalendar, HiLocationMarker } from "react-icons/hi";
+import useTranslation from "next-translate/useTranslation";
 
 function Hero(props) {
+  const { t, lang } = useTranslation("about");
+
   return (
     <section>
       <h1 className="text-4xl font-bold font-base text-center">Pycon 2022</h1>
@@ -20,14 +23,9 @@ function Hero(props) {
         </div>
 
         <div className="font-base">
-          <h1 className="text-4xl font-bold">Python Conference (Pycon)</h1>
+          <h1 className="text-4xl font-bold">{t("title")}</h1>
           <p className="my-6 text-lg  text-gray-500  dark:text-gray-400">
-            Is an annual gathering of Python programming language users in
-            Tanzania which includes software developers, data scientists, data
-            analysts & techies from various organisations. The conference is
-            organised by members of the Python Tanzania Users Group, a community
-            dedicated to advancing the use of the Python language and technology
-            in Tanzania.
+            {t("desc")}
           </p>
 
           <h2 className="font-bold text-2xl">Pycon 2022</h2>
@@ -37,8 +35,10 @@ function Hero(props) {
                 <HiCalendar className="w-6 h-6" />
               </div>
               <div className="font-base text-gray-500  dark:text-gray-400">
-                <h3 className="font-semibold">Date & Time</h3>
-                <p>05 - 19 Dec 2022, 08:00 AM to 05:00PM</p>
+                <h3 className="font-semibold">
+                  {lang === "en-US" ? "Date & Time" : "Tarehe & Wakati"}
+                </h3>
+                <p>05 - 08 Dec 2022, 08:00 AM to 05:00PM</p>
               </div>
             </div>
 
@@ -47,7 +47,9 @@ function Hero(props) {
                 <HiLocationMarker className="w-6 h-6" />
               </div>
               <div className="font-base text-gray-500  dark:text-gray-400">
-                <h3 className="font-semibold">Location</h3>
+                <h3 className="font-semibold">
+                  {lang === "en-US" ? "Location" : "Mahali"}
+                </h3>
                 <p>State University of Zanzibar Auditorium(SUZA), Zanzibar</p>
               </div>
             </div>
