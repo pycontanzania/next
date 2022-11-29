@@ -4,6 +4,11 @@
     "input_text": "Enter your email",
     "info": "Your email is safe with us. We don't spam",
     "hero_title":"Pycon 2022 Event",
-    "hero_countdown":"Time Left until event"
+    "hero_countdown":"Time Left until event",
+
+    "ticket_title":"Grab Your Ticket Now",
+    "ticket_price":"Ticket cost only 20,000 Tsh",
+    "qr":"Scan QR",
+    "sms_details":"Send SMS #oda tiketi to 0747927611 and respond to follow-up SMS"
     
 }

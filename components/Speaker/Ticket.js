@@ -4,7 +4,7 @@ import useTranslation from "next-translate/useTranslation";
 
 
 function Ticket(props) {
-  const { t, lang } = useTranslation("speak");
+  const { t, lang } = useTranslation("common");
   return (
     <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div className="p-5 text-center">

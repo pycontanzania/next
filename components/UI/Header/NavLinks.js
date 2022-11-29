@@ -36,7 +36,7 @@ function NavLinksLg(props) {
 
   let filteredLinks;
   if (!eventYear || eventYear === "2020" || eventYear === "2019") {
-    filteredLinks = navLinks.filter((link) => link.name !== "report");
+    filteredLinks = navLinks.filter((link) => locale=== 'en-US' && link.name !== "report" ||locale=== 'sw-TZ' && link.name !== "ripoti" );
   } else {
     filteredLinks = navLinks;
   }
@@ -44,7 +44,7 @@ function NavLinksLg(props) {
   return (
     <nav className="hidden lg:flex gap-x-8 font-base font-semibold">
       {filteredLinks.map((link) => {
-        if (link.name === "report") {
+        if (link.name === "report" || link.name === "ripoti"  ) {
           return (
             <a key={link.name} className="capitalize" href={link.path} download>
               {link.name}
@@ -96,7 +96,7 @@ function NavLinks({ open, setOpen }) {
   let filteredLinks;
 
   if (!eventYear || eventYear === "2020" || eventYear === "2019") {
-    filteredLinks = navLinks.filter((link) => link.name !== "report");
+    filteredLinks = navLinks.filter((link) => locale=== 'en-US' && link.name !== "report" ||locale=== 'sw-TZ' && link.name !== "ripoti" );
   } else {
     filteredLinks = navLinks;
   }
@@ -104,7 +104,7 @@ function NavLinks({ open, setOpen }) {
   return (
     <nav className="mx-[6%] my-16 h-full w-1/2 flex flex-col space-y-8 font-base font-semibold">
       {filteredLinks.map((link) => {
-        if (link.name === "report") {
+        if (link.name === "report"|| link.name=== "ripoti") {
           return (
             <a
               key={link.name}

@@ -6,6 +6,9 @@
         "/": ["home"],
         "/speaker": ["speak"],
         "/sponsors": ["sponsors"],
+        "/coc":["coc"],
+        "/covid":["covid"],
         "/events/[eventYear]": ["home"]
+       
       }
 }

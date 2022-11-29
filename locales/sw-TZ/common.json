@@ -4,5 +4,10 @@
     "input_text": "Weka barua pepe yako",
     "info": "Barua pepe yako iko salama ukiwa nasi. Hatutumi barua taka",
     "hero_title": "Tukio la Pycon 2022",
-    "hero_countdown":"Muda Uliosalia hadi tukio"
+    "hero_countdown":"Muda Uliosalia hadi tukio",
+
+    "ticket_title":"Jipatie Tiketi Yako Sasa",
+    "ticket_price":"Tiketi inauzwa Tsh 20,000 tu",
+    "qr":"Changanua QR",
+    "sms_details":"Tuma SMS #oda tiketi kwa 0747927611 na ujibu SMS ifuatayo"
 }

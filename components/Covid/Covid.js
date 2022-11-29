@@ -4,12 +4,14 @@ import ImageOne from "../../public/img/1.jpg";
 import ImageTwo from "../../public/img/2.jpg";
 import ImageThree from "../../public/img/3.jpg";
 
+import useTranslation from "next-translate/useTranslation";
+
 function Covid(props) {
+  const { t, lang } = useTranslation("covid");
   return (
     <section className="my-8">
-      <h1 className="text-4xl font-bold font-base text-center">Resources</h1>
+      <h1 className="text-4xl font-bold font-base text-center">{t("title")}</h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
-
 
       <div className="grid mt-20 place-items-center gap-8 sm:grid-cols-2 md:grid-cols-3">
         <a
@@ -29,15 +31,14 @@ function Covid(props) {
             </div>
             <div className="absolute top-12 left-16">
               <h1 className="mb-4 font-bold text-2xl">
-                <span className="text-green-600 mr-2">01</span>Get Vaccinated
+                <span className="text-green-600 mr-2">01</span>
+                {t("card_1_title")}
               </h1>
               <p className="my-6 text-lg font-medium">
-                <strong>Covid-19 </strong>vaccines are free
+                <strong>Covid-19 </strong>
+                {t("card_1_subtitle")}
               </p>
-              <p className="my-8 text-lg font-medium w-4/5">
-                We recommend checking the World Health Organization&apos;s
-                website for most accurate and up to date information.
-              </p>
+              <p className="my-8 text-lg font-medium w-4/5">{t("card_1_p")}</p>
             </div>
           </div>
         </a>
@@ -59,12 +60,10 @@ function Covid(props) {
             </div>
             <div className="absolute top-12 left-16">
               <h1 className="mb-4 font-bold text-2xl">
-                <span className="text-green-600 mr-2">02</span>Travel Advice
+                <span className="text-green-600 mr-2">02</span>
+                {t("card_2_title")}
               </h1>
-              <p className="my-8 text-lg font-medium w-4/5">
-                Keep safe and remember to wear a mask, During your travelling
-                and during the event.
-              </p>
+              <p className="my-8 text-lg font-medium w-4/5">{t("card_2_p")}</p>
             </div>
           </div>
         </a>
@@ -86,20 +85,17 @@ function Covid(props) {
             </div>
             <div className="absolute top-12 left-16">
               <h1 className="mb-4 font-bold text-2xl">
-                <span className="text-green-600 mr-2">03</span>Visa & Country
-                Ban
+                <span className="text-green-600 mr-2">03</span>
+                {t("card_2_title")}
               </h1>
-              <p className="my-8 text-lg font-medium w-4/5">
-                Make sure you have your travelling documents in order to have a
-                proof of vaccination.
-              </p>
+              <p className="my-8 text-lg font-medium w-4/5">{t("card_3_p")}</p>
             </div>
           </div>
         </a>
       </div>
 
       <div className="grid place-items-center mt-8 mb-24">
-        <h1 className="italic">Source from</h1>
+        <h1 className="italic">{t("source")}</h1>
         <ul className="flex flex-wrap">
           <li className="mr-8">
             <a
@@ -109,7 +105,7 @@ function Covid(props) {
               aria-label="Read more about Ministry of Health Tanzania "
               className="inline-block p-4 text-green-600 rounded-t-lg border-b-2 border-green-600 active dark:text-green-500 dark:border-green-500 hover:opacity-70 transition"
             >
-              Ministry of Health Tanzania
+              {t("source_1")}
             </a>
           </li>
           <li>
@@ -120,7 +116,7 @@ function Covid(props) {
               aria-label="Read more about International Travel"
               className="inline-block p-4 text-green-600 rounded-t-lg border-b-2 border-green-600 active dark:text-green-500 dark:border-green-500  hover:opacity-70 transition"
             >
-              International Travel
+              {t("source_2")}
             </a>
           </li>
         </ul>
