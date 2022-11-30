@@ -1,69 +1,65 @@
 import Image from "next/image";
-import sponsorImg from "../../public/img/sponsor.png";
-import beemImg from "../../public/img/beem.png";
 import useTranslation from "next-translate/useTranslation";
+
+import PSF from "../../public/img/sponsors/psf.jpg";
+import TigoPesa from "../../public/img/sponsors/tigo-pesa.png";
+import Tispa from "../../public/img/sponsors/tispa.png";
+import HabariNode from "../../public/img/sponsors/habari.png";
+import k15 from "../../public/img/sponsors/k15.png";
+import wia from "../../public/img/sponsors/wiacom.png";
+import maisha from "../../public/img/sponsors/maishabroadband.png";
+import Flashnet from "../../public/img/sponsors/flashnet.png";
 
 const sponsors = [
   {
     id: 1,
-    name: "Python",
+    name: "Python Software Foundation",
     url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    image: PSF,
   },
   {
     id: 2,
-    name: "Beem Africa",
-    url: "https://beem.africa/",
-    image: beemImg,
+    name: "Tigo Pesa",
+    url: "https://tigo.co.tz/",
+    image: TigoPesa,
   },
   {
     id: 3,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    name: "Tispa",
+    url: "https://tispa.or.tz/",
+    image: Tispa,
   },
   {
     id: 4,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    name: "Habari Node",
+    url: "https://habari.co.tz/",
+    image: HabariNode
   },
   {
     id: 5,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    name: "k15",
+    url: "https://k15.photos/",
+    image: k15,
   },
   {
     id: 6,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    name: "WiaCom",
+    url: "https://wia.co.tz/",
+    image: wia,
   },
   {
     id: 7,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    name: "MaishaBroadband",
+    url: "https://maisha.co.tz/",
+    image: maisha,
   },
   {
     id: 8,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
+    name: "Flashnet",
+    url: "https://flashnet.co.tz/",
+    image: Flashnet,
   },
-  {
-    id: 9,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
-  },
-  {
-    id: 10,
-    name: "Python",
-    url: "https://www.python.org/psf/",
-    image: sponsorImg,
-  },
+ 
 ];
 
 function SponsorCards(props) {
@@ -75,7 +71,7 @@ function SponsorCards(props) {
       </h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
 
-      <div className="my-16 grid place-items-center gap-x-16 gap-y-8 grid-cols-auto-fill">
+      <div className="my-16 grid place-items-center gap-x-16 gap-y-8 grid-cols-4">
         {sponsors &&
           sponsors.map((sponsor) => (
             <a
@@ -88,7 +84,8 @@ function SponsorCards(props) {
               <Image
                 src={sponsor.image}
                 className="cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-                layout="fill"
+                 height={200}
+                 width={200}
                 objectFit="contain"
                 alt="Sponsor Image"
               />

@@ -71,7 +71,7 @@ function PricingCard({checked}) {
     },
     {
       id:2,
-      status: "included",
+      status: "excluded",
       name:`${lang === 'en-US' ? "2 free conference registrations":"Nafasi 2 za usajili kwenye mkutano bure"}`
     },
     {
@@ -90,6 +90,24 @@ function PricingCard({checked}) {
     {
       id:2,
       status: "included",
+      name:`${lang === 'en-US' ? "2 free conference registrations":"Nafasi 2 za usajili kwenye mkutano bure"}`
+    },
+    {
+      id:3,
+      status: "excluded",
+      name:`${lang === 'en-US' ? "Speaking slot during the event":"Nafasi ya kuzungumza wakati wa tukio"}`
+    },
+  ];
+
+  const gold = [
+    {
+      id:1,
+      status: "included",
+      name:`${lang === 'en-US' ? "Company logo added at PyConTZ website":"Nembo ya kampuni kuongezwa kwenye tovuti ya PyConTZ"}`
+    },
+    {
+      id:2,
+      status: "included",
       name:`${lang === 'en-US' ? "4 free conference registrations":"Nafasi 4 za usajili kwenye mkutano bure"}`
     },
     {
@@ -100,52 +118,15 @@ function PricingCard({checked}) {
   ];
   return (
     <div className="my-16 grid  gap-x-16 gap-y-8 grid-cols-auto-fit">
-       {/* INDIVIDUAL PLAN */}
-      <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h5 className="mb-4 text-xl uppercase text-center font-medium text-gray-500 dark:text-gray-400">
-          { lang === 'en-US' ? 'Individual plan' :'Mpango wa mtu binafsi'}
-        </h5>
-        <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
-          <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
-          <span className="text-3xl font-extrabold tracking-tight">{checked ? '8.69': '20,273' }</span>
-        </div>
-
-        <ul role="list" className="my-7 space-y-5">
-          {individual.map((item) =>
-            item.status === "included" ? (
-              <li key={item.id} className="flex space-x-3">
-                {checkedSVG()}
-                <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                  {item.name}
-                </span>
-              </li>
-            ) : (
-              <li key={item.id} className="flex space-x-3 line-through decoration-gray-500">
-                {uncheckedSVG()}
-                <span className="text-base font-normal leading-tight text-gray-500">
-                  {item.name}
-                </span>
-              </li>
-            )
-          )}
-        </ul>
-        <button
-          type="button"
-          className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
-        >
-          {lang === 'en-US' ? 'Buy Tickets Now' : 'Nunua Tiketi Sasa'}
-        </button>
-      </div>
-         
-
+     
          {/* BRONZE SPONSOR */}
       <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <h5 className="mb-4 text-xl text-center font-medium uppercase text-gray-500 dark:text-gray-400">
-        { lang === 'en-US' ? 'Bronze Plan' :'Mpango wa Shaba'}
-        </h5>
+        <h1 className="mb-4 text-xl text-center font-medium uppercase text-gray-500 dark:text-gray-400">
+        { lang === 'en-US' ? 'Bronze Sponsor' :'Mdhamini wa Shaba'}
+        </h1>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
           <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
-          <span className="text-3xl font-extrabold tracking-tight">{checked ? '500': '1,166,455' }</span>
+          <span className="text-3xl font-extrabold tracking-tight">{checked ? '1,000': '2,334,000' }</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -167,24 +148,24 @@ function PricingCard({checked}) {
             )
           )}
         </ul>
-        <button
-          type="button"
+        <a
+           href="mailto:noah@pycon.or.tz?subject=Pycon 2022 Bronze Sponsorship &body=I'm interested to sponsor Pycon 2022"
           className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
         >
-          {lang === 'en-US' ? 'Choose plan' : 'Chagua mpango'}
+          {lang === 'en-US' ? 'Donate Now' : 'Changia Sasa'}
           
-        </button>
+        </a>
       </div>
 
-      {/* SILVER PLAN */}
+      {/* SILVER SPONSOR */}
       <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 className="mb-4 text-xl text-center font-medium uppercase text-gray-500 dark:text-gray-400">
-        { lang === 'en-US' ? 'Silver plan' :'Mpango wa fedha'}
+        { lang === 'en-US' ? 'Silver Sponsor' :'Mdhamini wa Fedha'}
           
         </h5>
         <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
           <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
-          <span className="text-3xl font-extrabold tracking-tight">{checked ? '1,000': '2,332,910' }</span>
+          <span className="text-3xl font-extrabold tracking-tight">{checked ? '2,500': '5,835,000' }</span>
         </div>
 
         <ul role="list" className="my-7 space-y-5">
@@ -206,12 +187,51 @@ function PricingCard({checked}) {
             )
           )}
         </ul>
-        <button
-          type="button"
+        <a
+           href="mailto:noah@pycon.or.tz?subject=Pycon 2022 Silver Sponsorship &body=I'm interested to sponsor Pycon 2022"
           className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
         >
-          {lang === 'en-US' ? 'Choose plan' : 'Chagua mpango'}
-        </button>
+          {lang === 'en-US' ? 'Donate Now' : 'Changia Sasa'}
+        </a>
+      </div>
+
+
+      {/* GOLD SPONSOR */}
+      <div className="p-4 w-full max-w-sm bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <h5 className="mb-4 text-xl text-center font-medium uppercase text-gray-500 dark:text-gray-400">
+        { lang === 'en-US' ? 'Gold Sponsors' :'Wadhamini wa Dhahabu'}
+          
+        </h5>
+        <div className="flex items-baseline justify-center text-gray-900 dark:text-white">
+          <span className={`text-xl font-semibold ${checked ? '': 'mr-2'}`}>{checked ? '$' : 'TZS' }</span>
+          <span className="text-3xl font-extrabold tracking-tight">{checked ? '5,000': '11,670,000' }</span>
+        </div>
+
+        <ul role="list" className="my-7 space-y-5">
+        {gold.map((item) =>
+            item.status === "included" ? (
+              <li key={item.id} className="flex space-x-3">
+                {checkedSVG()}
+                <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                  {item.name}
+                </span>
+              </li>
+            ) : (
+              <li key={item.id} className="flex space-x-3 line-through decoration-gray-500">
+                {uncheckedSVG()}
+                <span className="text-base font-normal leading-tight text-gray-500">
+                  {item.name}
+                </span>
+              </li>
+            )
+          )}
+        </ul>
+        <a
+           href="mailto:noah@pycon.or.tz?subject=Pycon 2022 Gold Sponsorship &body=I'm interested to sponsor Pycon 2022"
+          className="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
+        >
+          {lang === 'en-US' ? 'Donate Now' : 'Changia Sasa'}
+        </a>
       </div>
     </div>
   );
