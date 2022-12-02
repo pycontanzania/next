@@ -9,8 +9,8 @@ function Hero(props) {
       <h1 className="text-4xl font-bold font-base text-center">PyCon 2022</h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
 
-      <div className="my-20 grid lg:grid-cols-2 gap-16">
-        <div className="aspect-w-16 aspect-h-9 mb-16">
+      <div className="my-16 md:my-20 grid lg:grid-cols-2 gap-16">
+        <div className="aspect-w-16 aspect-h-9 mb-4 md:mb-16">
           <iframe
             width="560"
             height="315"
@@ -23,7 +23,7 @@ function Hero(props) {
         </div>
 
         <div className="font-base">
-          <h1 className="text-4xl font-bold">{t("title")}</h1>
+          <h1 className="text-2xl md:text-4xl font-bold">{t("title")}</h1>
           <p className="my-6 text-lg  text-gray-500  dark:text-gray-400">
             {t("desc")}
           </p>
@@ -38,7 +38,8 @@ function Hero(props) {
                 <h3 className="font-semibold">
                   {lang === "en-US" ? "Date & Time" : "Tarehe & Wakati"}
                 </h3>
-                <p>05 - 08 Dec 2022, 08:00 AM to 05:00PM</p>
+                <p className="text-sm md:text-base">05 - 08 Dec 2022</p>
+                <p className="text-sm md:text-base">09:00 AM to 05:15 PM</p>
               </div>
             </div>
 
@@ -50,7 +51,7 @@ function Hero(props) {
                 <h3 className="font-semibold">
                   {lang === "en-US" ? "Location" : "Mahali"}
                 </h3>
-                <p>State University of Zanzibar Auditorium(SUZA), Zanzibar</p>
+                <p className="text-sm md:text-base">State University of Zanzibar Auditorium(SUZA), Zanzibar</p>
               </div>
             </div>
           </div>

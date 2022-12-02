@@ -7,7 +7,7 @@ function Team(props) {
 
   return (
     <section className="my-24">
-      <h1 className="text-4xl font-bold font-base text-center">
+      <h1 className="text-2xl md:text-4xl font-bold font-base text-center">
         {t("team_title")}
       </h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
