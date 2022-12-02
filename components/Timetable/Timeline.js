@@ -8,27 +8,21 @@ function Timeline({ active }) {
   const firstDay = [
     {
       id: 1,
-      name: `${
-        lang === "en-US"
-          ? "Opening Keynotes VC - SUZA"
-          : "Keynote ya ufunguzi kutoka kwa VC - SUZA"
-      }`,
+      name: `${lang === "en-US" ? "Opening Keynotes" : "Keynote ya ufunguzi"}`,
       time: "09:00 - 09:30",
-      details: "",
+      speakers: "VC - SUZA",
     },
     {
       id: 2,
-      name: `${
-        lang === "en-US" ? "Dean - SUZA, HoD - SUZA" : "Dean - SUZA, HoD - SUZA"
-      }`,
+      name: `${lang === "en-US" ? "Opening Keynotes" : "Keynote ya ufunguzi"}`,
       time: "09:30 - 10:00",
-      details: "",
+      speakers: "Dean - SUZA, HoD - SUZA",
     },
     {
       id: 3,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "10:00 - 10:30",
-      details: "",
+      speakers: "",
     },
     {
       id: 4,
@@ -38,7 +32,7 @@ function Timeline({ active }) {
           : "Kwa nini Python - Matumizi na Msingi wa Python (Bootcamp)"
       }`,
       time: "10:30 - 11:30",
-      details: "",
+      speakers: "Joan & Abubakar",
     },
 
     {
@@ -49,7 +43,7 @@ function Timeline({ active }) {
           : "Matengenezo ya tovuti kutumia Python Django"
       }`,
       time: "11:30 - 12:30",
-      details: "",
+      speakers: "Lugano Ngulwa",
     },
     {
       id: 6,
@@ -59,13 +53,13 @@ function Timeline({ active }) {
           : "Uchambuzi wa Mtandao Umerahisishwa Kwa Kutumia NetworkX"
       }`,
       time: "12:30 - 13:00",
-      details: "",
+      speakers: "Mridul Seth",
     },
     {
       id: 7,
       name: `${lang === "en-US" ? "Lunch" : "Chakula cha mchana"}`,
       time: "13:00 - 14:00",
-      details: "",
+      speakers: "",
     },
 
     {
@@ -76,7 +70,7 @@ function Timeline({ active }) {
           : "Uchambuzi wa Mtandao Umerahisishwa Kwa Kutumia NetworkX"
       }`,
       time: "14:00 - 15:00",
-      details: "",
+      speakers: "Mridul Seth",
     },
     {
       id: 9,
@@ -86,13 +80,13 @@ function Timeline({ active }) {
           : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
       }`,
       time: "15:00 - 16:00",
-      details: "",
+      speakers: "Jordan Kalebu",
     },
     {
       id: 10,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "16:00 - 16:15",
-      details: "",
+      speakers: "",
     },
     {
       id: 11,
@@ -102,17 +96,17 @@ function Timeline({ active }) {
           : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
       }`,
       time: "16:15 - 17:15",
-      details: "",
+      speakers: "Jordan Kalebu",
     },
 
-    {
-      id: 12,
-      name: `${
-        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
-      }`,
-      time: "",
-      details: "",
-    },
+    // {
+    //   id: 12,
+    //   name: `${
+    //     lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
+    //   }`,
+    //   time: "",
+    //   speakers: "",
+    // },
   ];
 
   const secondDay = [
@@ -125,7 +119,7 @@ function Timeline({ active }) {
       }`,
       time: "09:00 - 10:00",
       details: "",
-      fas: "",
+      fas: "Jordan Kalebu",
     },
     {
       id: 2,
@@ -142,8 +136,8 @@ function Timeline({ active }) {
           : "HACKATHON - Basket Analysis na Python"
       }`,
       time: "10:30 - 13:00",
-      details: "",
-      fas: "",
+      details: "TIGO",
+      fas: "Rodrick Kayombo",
     },
     {
       id: 4,
@@ -160,8 +154,8 @@ function Timeline({ active }) {
           : "HACKATHON - Basket Analysis na Python"
       }`,
       time: "14:00 - 16:00",
-      details: "",
-      fas: "",
+      details: "TIGO",
+      fas: "Rodrick Kayombo",
     },
     {
       id: 6,
@@ -178,8 +172,8 @@ function Timeline({ active }) {
           : "HACKATHON - Basket Analysis na Python"
       }`,
       time: "16:15 - 16:45",
-      details: "",
-      fas: "",
+      details: "TIGO",
+      fas: "Rodrick Kayombo",
     },
     {
       id: 8,
@@ -188,15 +182,15 @@ function Timeline({ active }) {
       details: "",
       fas: "",
     },
-    {
-      id: 9,
-      name: `${
-        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
-      }`,
-      time: "",
-      details: "",
-      fas: "",
-    },
+    // {
+    //   id: 9,
+    //   name: `${
+    //     lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
+    //   }`,
+    //   time: "",
+    //   details: "",
+    //   fas: "",
+    // },
   ];
 
   const thirdDay = [
@@ -205,8 +199,7 @@ function Timeline({ active }) {
       name: `${lang === "en-US" ? "Keynote" : "Maelezo muhimu"}`,
       time: "09:00 - 09:30",
       details: "Python Software Foundation",
-      presentor: "Loren Crary",
-      pr_expertise: "",
+      presentor: "Loren Crary"
     },
     {
       id: 2,
@@ -217,8 +210,7 @@ function Timeline({ active }) {
       }`,
       time: "09:30 - 10:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Hassan Kibirige"
     },
 
     {
@@ -226,8 +218,7 @@ function Timeline({ active }) {
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "10:00 - 10:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
     {
       id: 4,
@@ -238,8 +229,7 @@ function Timeline({ active }) {
       }`,
       time: "10:30 - 11:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Issa Mshani"
     },
     {
       id: 5,
@@ -250,8 +240,7 @@ function Timeline({ active }) {
       }`,
       time: "11:00 - 11:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Eng.Saida Nyasasi"
     },
     {
       id: 6,
@@ -262,8 +251,7 @@ function Timeline({ active }) {
       }`,
       time: "11:30 - 12:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Antony Mipawa"
     },
     {
       id: 7,
@@ -274,8 +262,7 @@ function Timeline({ active }) {
       }`,
       time: "12:00 - 12:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Dr.Dina Machuve"
     },
     {
       id: 8,
@@ -286,28 +273,23 @@ function Timeline({ active }) {
       }`,
       time: "12:30 - 13:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Zephania Reuben"
     },
     {
       id: 9,
       name: `${lang === "en-US" ? "Lunch" : "Chakula cha Mchana"}`,
       time: "13:00 - 14:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
     {
       id: 10,
       name: `${
-        lang === "en-US"
-          ? "Open Source Is Not Free"
-          : "Chanzo Huria Sio Bure"
+        lang === "en-US" ? "Open Source Is Not Free" : "Chanzo Huria Sio Bure"
       }`,
       time: "14:00 - 14:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Kalebu Jordan"
     },
     {
       id: 11,
@@ -318,8 +300,7 @@ function Timeline({ active }) {
       }`,
       time: "14:30 - 15:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Isack Odero"
     },
     {
       id: 12,
@@ -330,35 +311,31 @@ function Timeline({ active }) {
       }`,
       time: "15:00 - 16:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Issa Mshani & Eng.Saida Nyasasi"
     },
     {
       id: 13,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "16:00 - 16:15",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
     {
       id: 14,
       name: `${lang === "en-US" ? "Lightning Talks" : "Mazungumzo ya Haraka"}`,
       time: "16:15 - 17:15",
-      details: "",
-      presentor: "",
-      pr_expertise: "",
+      details: "Pycon",
+      presentor: "Noah & Julius"
     },
-    {
-      id: 15,
-      name: `${
-        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
-      }`,
-      time: "4:45 - 5:00",
-      details: "",
-      presentor: "",
-      pr_expertise: "",
-    },
+    // {
+    //   id: 15,
+    //   name: `${
+    //     lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
+    //   }`,
+    //   time: "4:45 - 5:00",
+    //   details: "",
+    //   presentor: ""
+    // }
   ];
 
   const fourthDay = [
@@ -366,48 +343,35 @@ function Timeline({ active }) {
       id: 1,
       name: `${
         lang === "en-US"
-          ? "Time Series Forecasting with Python"
-          : "Utabiri wa Mfuatano wa Wakati na Python"
+          ? "Python for Embedded Things"
+          : "Python kwa vitu vilivyopachikwa (Embedded Things)"
       }`,
       time: "09:00 - 09:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Mahir Nasor"
     },
     {
       id: 2,
       name: `${
         lang === "en-US"
-          ? "Python for Embedded Things"
-          : "Python kwa vitu vilivyopachikwa (Embedded Things)"
+          ? "WebScrapping with Beautiful Soup"
+          : "Kuchakachua wavuti na Beautiful Soup"
       }`,
       time: "09:30 - 10:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Mwaipopo"
     },
+   
     {
       id: 3,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "10:00 - 10:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
+   
     {
       id: 4,
-      name: `${
-        lang === "en-US"
-          ? "WebScrapping with Beautiful Soup"
-          : "Kuchakachua wavuti na Beautiful Soup"
-      }`,
-      time: "10:30 - 11:00",
-      details: "",
-      presentor: "",
-      pr_expertise: "",
-    },
-    {
-      id: 5,
       name: `${
         lang === "en-US"
           ? "WebScrapping of Consumer Prices"
@@ -415,11 +379,10 @@ function Timeline({ active }) {
       }`,
       time: "11:00 - 11:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Alban Manishimwe"
     },
     {
-      id: 6,
+      id: 5,
       name: `${
         lang === "en-US"
           ? "Testing Smart Contracts with PyTest & Brownie"
@@ -427,11 +390,10 @@ function Timeline({ active }) {
       }`,
       time: "11:30 - 12:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Simbo Ntiro"
     },
     {
-      id: 7,
+      id: 6,
       name: `${
         lang === "en-US"
           ? "Geoepatial Data Analysis using Python"
@@ -439,11 +401,10 @@ function Timeline({ active }) {
       }`,
       time: "12:30 - 12:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Khairiya Masoud"
     },
     {
-      id: 8,
+      id: 7,
       name: `${
         lang === "en-US"
           ? "Python Web Development with Django"
@@ -451,16 +412,14 @@ function Timeline({ active }) {
       }`,
       time: "12:30 - 13:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
     {
       id: 9,
       name: `${lang === "en-US" ? "Lunch" : "Chakula cha Mchana"}`,
       time: "13:00- 14:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Lugano Ngulwa"
     },
     {
       id: 10,
@@ -471,8 +430,7 @@ function Timeline({ active }) {
       }`,
       time: "14:00 - 14:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Yesaya Athuman"
     },
     {
       id: 11,
@@ -483,8 +441,7 @@ function Timeline({ active }) {
       }`,
       time: "14:30 - 15:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Monalisa Mbilinyi"
     },
     {
       id: 12,
@@ -495,8 +452,7 @@ function Timeline({ active }) {
       }`,
       time: "15:00 - 15:30",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: "Sami Gezici"
     },
     {
       id: 13,
@@ -507,18 +463,16 @@ function Timeline({ active }) {
       }`,
       time: "15:30 - 16:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
-    },  
+      presentor: ""
+    },
     {
       id: 14,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "16:00 - 16:15",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
-   
+
     {
       id: 15,
       name: `${
@@ -528,8 +482,7 @@ function Timeline({ active }) {
       }`,
       time: "16:15 - 16:45",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
     {
       id: 16,
@@ -540,19 +493,17 @@ function Timeline({ active }) {
       }`,
       time: "16:45 - 17:00",
       details: "",
-      presentor: "",
-      pr_expertise: "",
+      presentor: ""
     },
-    {
-      id: 17,
-      name: `${
-        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
-      }`,
-      time: "",
-      details: "",
-      presentor: "",
-      pr_expertise: "",
-    },
+    // {
+    //   id: 17,
+    //   name: `${
+    //     lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
+    //   }`,
+    //   time: "",
+    //   details: "",
+    //   presentor: "",
+    // },
   ];
 
   const iconSVG = () => {
@@ -596,9 +547,11 @@ function Timeline({ active }) {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {event.time}
                 </time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  {event.details}
-                </p>
+                {event.speakers && (
+                  <p className="my-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Speaker(s)/Facilitator(s): <strong>{event.speakers}</strong>
+                  </p>
+                )}
               </li>
             ))}
         </ol>
@@ -627,20 +580,16 @@ function Timeline({ active }) {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {event.time}
                 </time>
-                <p
-                  className={`${
-                    event.details === "" ? "hidden" : ""
-                  } text-base font-normal text-gray-500 dark:text-gray-400`}
-                >
-                  {event.details}
-                </p>
-                <p
-                  className={`${
-                    event.fas === "" ? "hidden" : ""
-                  } my-2 text-base font-normal text-gray-500 dark:text-gray-400`}
-                >
-                  <strong>Facilitators</strong> - {event.fas}
-                </p>
+                {event.details && (
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    {event.details}
+                  </p>
+                )}
+                {event.fas && (
+                  <p className="my-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                     Speaker(s)/Facilitator(s): <strong>{event.fas}</strong>
+                  </p>
+                )}
               </li>
             ))}
         </ol>
@@ -669,20 +618,16 @@ function Timeline({ active }) {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {event.time}
                 </time>
-                <p
-                  className={`${
-                    event.details === "" ? "hidden" : ""
-                  } text-base font-normal text-gray-500 dark:text-gray-400`}
-                >
-                  {event.details}
-                </p>
-                <p
-                  className={`${
-                    event.presentor === "" ? "hidden" : ""
-                  } my-2 text-base font-normal text-gray-500 dark:text-gray-400`}
-                >
-                  {event.presentor} - {event.pr_expertise}
-                </p>
+                {event.details && (
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    {event.details}
+                  </p>
+                )}
+               {event.presentor && (
+                  <p className="my-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                     Speaker(s)/Facilitator(s): <strong>{event.presentor}</strong>
+                  </p>
+                )}
               </li>
             ))}
         </ol>
@@ -711,20 +656,16 @@ function Timeline({ active }) {
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {event.time}
                 </time>
-                <p
-                  className={`${
-                    event.details === "" ? "hidden" : ""
-                  } text-base font-normal text-gray-500 dark:text-gray-400`}
-                >
-                  {event.details}
-                </p>
-                <p
-                  className={`${
-                    event.presentor === "" ? "hidden" : ""
-                  } my-2 text-base font-normal text-gray-500 dark:text-gray-400`}
-                >
-                  {event.presentor} - {event.pr_expertise}
-                </p>
+                {event.details && (
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    {event.details}
+                  </p>
+                )}
+               {event.presentor && (
+                  <p className="my-2 text-base font-normal text-gray-500 dark:text-gray-400">
+                     Speaker(s)/Facilitator(s): <strong>{event.presentor}</strong>
+                  </p>
+                )}
               </li>
             ))}
         </ol>
