@@ -69,8 +69,8 @@ const sponsors = [
   },
   {
     id: 10,
-    name: "Flashnet",
-    url: "https://flashnet.co.tz/",
+    name: "Irabu",
+    url: "https://irabu.co.tz/",
     image: Irabu,
   },
  
