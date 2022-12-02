@@ -19,51 +19,55 @@ function Timeline({ active }) {
     {
       id: 2,
       name: `${
-        lang === "en-US"
-          ? "Python Software Foundation"
-          : "Msingi wa Lugha ya Python"
+        lang === "en-US" ? "Dean - SUZA, HoD - SUZA" : "Dean - SUZA, HoD - SUZA"
       }`,
-      time: "09:30 - 10:30",
-      details: "Loren Crary",
+      time: "09:30 - 10:00",
+      details: "",
     },
     {
       id: 3,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "10:30 - 10:45",
+      time: "10:00 - 10:30",
       details: "",
     },
     {
       id: 4,
       name: `${
         lang === "en-US"
-          ? "Foundation of Python Bootcamp"
-          : "Msingi wa Python (Bootcamp)"
+          ? "Why Python - Usecases Foundation of Python Bootcamp"
+          : "Kwa nini Python - Matumizi na Msingi wa Python (Bootcamp)"
       }`,
-      time: "10:45 - 11:45",
+      time: "10:30 - 11:30",
       details: "",
     },
+
     {
       id: 5,
-      name: `${lang === "en-US" ? "Lunch" : "Chakula cha mchana"}`,
-      time: "11:45 - 1:15",
+      name: `${
+        lang === "en-US"
+          ? "Django Python Web Development"
+          : "Matengenezo ya tovuti kutumia Python Django"
+      }`,
+      time: "11:30 - 12:30",
       details: "",
     },
     {
       id: 6,
       name: `${
         lang === "en-US"
-          ? "Django Python Web Development"
-          : "Matengenezo ya tovuti kutumia Python Django"
+          ? "Network Analysis Made Simple Using NetworkX"
+          : "Uchambuzi wa Mtandao Umerahisishwa Kwa Kutumia NetworkX"
       }`,
-      time: "1:15 - 2:15",
+      time: "12:30 - 13:00",
       details: "",
     },
     {
       id: 7,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "2:15 - 2:30",
+      name: `${lang === "en-US" ? "Lunch" : "Chakula cha mchana"}`,
+      time: "13:00 - 14:00",
       details: "",
     },
+
     {
       id: 8,
       name: `${
@@ -71,31 +75,42 @@ function Timeline({ active }) {
           ? "Network Analysis Made Simple Using NetworkX"
           : "Uchambuzi wa Mtandao Umerahisishwa Kwa Kutumia NetworkX"
       }`,
-      time: "2:30 - 3:30",
+      time: "14:00 - 15:00",
       details: "",
     },
     {
       id: 9,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "3:30 - 3:45",
-      details: "",
-    },
-    {
-      id: 10,
       name: `${
         lang === "en-US"
           ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
           : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
       }`,
-      time: "3:45 - 4:45",
+      time: "15:00 - 16:00",
+      details: "",
+    },
+    {
+      id: 10,
+      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
+      time: "16:00 - 16:15",
       details: "",
     },
     {
       id: 11,
       name: `${
+        lang === "en-US"
+          ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
+          : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
+      }`,
+      time: "16:15 - 17:15",
+      details: "",
+    },
+
+    {
+      id: 12,
+      name: `${
         lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
       }`,
-      time: "4:45 - 5:00",
+      time: "",
       details: "",
     },
   ];
@@ -108,46 +123,50 @@ function Timeline({ active }) {
           ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
           : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
       }`,
-      time: "09:00 - 09:30",
+      time: "09:00 - 10:00",
       details: "",
       fas: "",
     },
     {
       id: 2,
-      name: "Tigo Hackathon",
-      time: "09:30 - 10:30",
+      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
+      time: "10:00 - 10:30",
       details: "",
       fas: "",
     },
     {
       id: 3,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "10:30 - 10:45",
+      name: `${
+        lang === "en-US"
+          ? "HACKATHON - Basket Analysis with Python"
+          : "HACKATHON - Basket Analysis na Python"
+      }`,
+      time: "10:30 - 13:00",
       details: "",
       fas: "",
     },
     {
       id: 4,
-      name: `${
-        lang === "en-US"
-          ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
-          : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
-      }`,
-      time: "10:45:00 - 11:15",
+      name: `${lang === "en-US" ? "Lunch" : "Chakula cha mchana"}`,
+      time: "13:00 - 14:00",
       details: "",
       fas: "",
     },
     {
       id: 5,
-      name: "Tigo Hackathon",
-      time: "11:15 - 11:45",
+      name: `${
+        lang === "en-US"
+          ? "HACKATHON - Basket Analysis with Python"
+          : "HACKATHON - Basket Analysis na Python"
+      }`,
+      time: "14:00 - 16:00",
       details: "",
       fas: "",
     },
     {
       id: 6,
-      name: `${lang === "en-US" ? "Lunch" : "Chakula cha mchana"}`,
-      time: "11:45 - 1:15",
+      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
+      time: "16:00 - 16:15",
       details: "",
       fas: "",
     },
@@ -155,108 +174,57 @@ function Timeline({ active }) {
       id: 7,
       name: `${
         lang === "en-US"
-          ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
-          : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
+          ? "HACKATHON - Basket Analysis with Python"
+          : "HACKATHON - Basket Analysis na Python"
       }`,
-      time: "1:15 - 1:45",
+      time: "16:15 - 16:45",
       details: "",
       fas: "",
     },
     {
       id: 8,
-      name: "Tigo Hackathon",
-      time: "1:45 - 2:15",
+      name: "Hackathon Birds of Feather (BOF)",
+      time: "16:45 - 17:15",
       details: "",
       fas: "",
     },
     {
       id: 9,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "2:15 - 2:30",
-      details: "",
-      fas: "",
-    },
-    {
-      id: 10,
       name: `${
-        lang === "en-US"
-          ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
-          : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
+        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
       }`,
-      time: "2:30 - 3:00",
+      time: "",
       details: "",
       fas: "",
-    },
-    {
-      id: 11,
-      name: "Tigo Hackathon",
-      time: "3:00 - 3:30",
-      details: "",
-      fas: "",
-    },
-    {
-      id: 12,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "3:30 - 3:45",
-      details: "",
-      fas: "",
-    },
-    {
-      id: 13,
-      name: `${
-        lang === "en-US"
-          ? "HACKATHON - NLP for African Languages, Building Chatbots with Sarufi"
-          : "HACKATHON - NLP kwa Lugha za Kiafrika, Kutengeneza chatbots Sogoa na Sarufi"
-      }`,
-      time: "3:45 - 4:15",
-      details: "",
-      fas: "",
-    },
-    {
-      id: 14,
-      name:"Hackathon Birds of Feather (BOF)",
-      time: "3:45 - 4:15",
-      details: "",
-      fas: "",
-    },
-    {
-      id: 15,
-      name: `${lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"}`,
-      time: "4:45 - 5:00",
-      details: "",
-      fas:""
     },
   ];
 
   const thirdDay = [
     {
       id: 1,
-      name: `${
-        lang === "en-US"
-          ? "Why is Data Science Necessary, Why Now?"
-          : "Kwa nini Sayansi ya Data Inahitajika, Kwa Nini Sasa?"
-      }`,
+      name: `${lang === "en-US" ? "Keynote" : "Maelezo muhimu"}`,
       time: "09:00 - 09:30",
-      details: "",
-      presentor: "",
+      details: "Python Software Foundation",
+      presentor: "Loren Crary",
       pr_expertise: "",
     },
     {
       id: 2,
       name: `${
         lang === "en-US"
-          ? "Geoepatial Data Analysis using Python"
-          : "Uchambuzi wa Data za Geospatial kwa kutumia Python"
+          ? "Why is Data Science Necessary, Why Now?"
+          : "Kwa nini Sayansi ya Data Inahitajika, Kwa Nini Sasa?"
       }`,
-      time: "09:30 - 10:30",
+      time: "09:30 - 10:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
+
     {
       id: 3,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "10:30 - 10:45",
+      time: "10:00 - 10:30",
       details: "",
       presentor: "",
       pr_expertise: "",
@@ -268,7 +236,7 @@ function Timeline({ active }) {
           ? "Species Determination of Malaria Vectors Using AI"
           : "Ugunduzi wa Aina za Vekta za Malaria Kwa Kutumia AI"
       }`,
-      time: "10:45 - 11:15",
+      time: "10:30 - 11:00",
       details: "",
       presentor: "",
       pr_expertise: "",
@@ -277,96 +245,120 @@ function Timeline({ active }) {
       id: 5,
       name: `${
         lang === "en-US"
-          ? "Python Development - Tigo"
-          : "Kutengeneza na Python - Tigo"
+          ? "Analyzing the Development of Cervical Cancer (ML)"
+          : "Uchambuzi wa ukuzi wa saratani ya Shingo ya Kizazi (ML)"
       }`,
-      time: "11:15 - 11:45",
+      time: "11:00 - 11:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 6,
-      name: `${lang === "en-US" ? "Lunch" : "Chakula cha Mchana"}`,
-      time: "11:45 - 1:15",
+      name: `${
+        lang === "en-US"
+          ? "Explainability for Natural Language Processing"
+          : "Ufafanuzi wa Uchakataji Lugha Asilia"
+      }`,
+      time: "11:30 - 12:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 7,
-      name: `${lang === "en-US" ? "Analyzing the Development of Cervical Cancer (ML)" : "Uchambuzi wa ukuzi wa saratani ya Shingo ya Kizazi (ML)"}`,
-      time: "1:15 - 1:45",
+      name: `${
+        lang === "en-US"
+          ? "Poultry Disease Diagnosis with Deep Learning"
+          : "Utambuzi wa Ugonjwa wa Kuku kwa kutumia Deep Learning"
+      }`,
+      time: "12:00 - 12:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 8,
-      name: `${lang === "en-US" ? "Explainability for Natural Language Processing" : "Ufafanuzi wa Uchakataji Lugha Asilia"}`,
-      time: "1:45 - 2:15",
+      name: `${
+        lang === "en-US"
+          ? "Predicting Fake News Using GCN"
+          : "Kutabiri Habari za Uongo Kwa Kutumia GCN"
+      }`,
+      time: "12:30 - 13:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 9,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "2:15 - 2:30",
+      name: `${lang === "en-US" ? "Lunch" : "Chakula cha Mchana"}`,
+      time: "13:00 - 14:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 10,
-      name: `${lang === "en-US" ? "Predicting Fake News Using GCN" : "Kutabiri Habari za Uongo Kwa Kutumia GCN"}`,
-      time: "2:30 - 3:00",
+      name: `${
+        lang === "en-US"
+          ? "Open Source Is Not Free"
+          : "Chanzo Huria Sio Bure"
+      }`,
+      time: "14:00 - 14:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 11,
-      name: `${lang === "en-US" ? "Poultry Disease Diagnosis with Deep Learning" : "Utambuzi wa Ugonjwa wa Kuku kwa kutumia Deep Learning"}`,
-      time: "3:00 - 3:30",
+      name: `${
+        lang === "en-US"
+          ? "Transformers and Self Attention"
+          : "Waleta mabadiliko na Kujijali"
+      }`,
+      time: "14:30 - 15:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 12,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "3:30 - 3:45",
+      name: `${
+        lang === "en-US"
+          ? "Panel Discussion on DS/ML/AI"
+          : "Majadiliano ya Paneli kuhusu DS/ML/AI"
+      }`,
+      time: "15:00 - 16:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 13,
-      name: `${lang === "en-US" ? "Transformers and Self Attention" : "Waleta mabadiliko na Kujijali"}`,
-      time: "3:45 - 4:15",
+      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
+      time: "16:00 - 16:15",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 14,
-      name: `${lang === "en-US" ? "Panel Discussion on DS/ML/AI" : "Majadiliano ya Paneli kuhusu DS/ML/AI"}`,
-      time: "4:15 - 4:45",
+      name: `${lang === "en-US" ? "Lightning Talks" : "Mazungumzo ya Haraka"}`,
+      time: "16:15 - 17:15",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 15,
-      name: `${lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"}`,
+      name: `${
+        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
+      }`,
       time: "4:45 - 5:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
-
-   
   ];
 
   const fourthDay = [
@@ -374,8 +366,8 @@ function Timeline({ active }) {
       id: 1,
       name: `${
         lang === "en-US"
-          ? "Fun Simple Python Programs"
-          : "Programu rahisi na za kufurahisha za Python"
+          ? "Time Series Forecasting with Python"
+          : "Utabiri wa Mfuatano wa Wakati na Python"
       }`,
       time: "09:00 - 09:30",
       details: "",
@@ -386,10 +378,10 @@ function Timeline({ active }) {
       id: 2,
       name: `${
         lang === "en-US"
-          ? "Python Development - Tigo"
-          : "Kutengeneza na Python - Tigo"
+          ? "Python for Embedded Things"
+          : "Python kwa vitu vilivyopachikwa (Embedded Things)"
       }`,
-      time: "09:30 - 10:30",
+      time: "09:30 - 10:00",
       details: "",
       presentor: "",
       pr_expertise: "",
@@ -397,7 +389,7 @@ function Timeline({ active }) {
     {
       id: 3,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "10:30 - 10:45",
+      time: "10:00 - 10:30",
       details: "",
       presentor: "",
       pr_expertise: "",
@@ -406,10 +398,10 @@ function Timeline({ active }) {
       id: 4,
       name: `${
         lang === "en-US"
-          ? "Python for Embedded Things"
-          : "Python kwa vitu vilivyopachikwa (Embedded Things)"
+          ? "WebScrapping with Beautiful Soup"
+          : "Kuchakachua wavuti na Beautiful Soup"
       }`,
-      time: "10:45 - 11:15",
+      time: "10:30 - 11:00",
       details: "",
       presentor: "",
       pr_expertise: "",
@@ -418,97 +410,149 @@ function Timeline({ active }) {
       id: 5,
       name: `${
         lang === "en-US"
-          ? "Python Web Development with Django"
-          : "Kutengeneza Wavuti na Python na Django"
+          ? "WebScrapping of Consumer Prices"
+          : "Kuchakachua wavuti kupata Bei za Watumiaji/Wanunuzi"
       }`,
-      time: "11:15 - 11:45",
+      time: "11:00 - 11:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 6,
-      name: `${lang === "en-US" ? "Lunch" : "Chakula cha Mchana"}`,
-      time: "11:45 - 1:15",
+      name: `${
+        lang === "en-US"
+          ? "Testing Smart Contracts with PyTest & Brownie"
+          : "Kupima Smart Contracts na PyTest & Brownie"
+      }`,
+      time: "11:30 - 12:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 7,
-      name: `${lang === "en-US" ? "WebScrapping of Consumer Prices" : "Kuchakachua wavuti kupata Bei za Watumiaji/Wanunuzi"}`,
-      time: "1:15 - 1:45",
+      name: `${
+        lang === "en-US"
+          ? "Geoepatial Data Analysis using Python"
+          : "Uchambuzi wa Data za Geospatial kwa kutumia Python"
+      }`,
+      time: "12:30 - 12:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 8,
-      name: `${lang === "en-US" ? "Testing Smart Contracts with PyTest & Brownie" : "Kupima Smart Contracts na PyTest & Brownie"}`,
-      time: "1:45 - 2:15",
+      name: `${
+        lang === "en-US"
+          ? "Python Web Development with Django"
+          : "Kutengeneza Wavuti na Python na Django"
+      }`,
+      time: "12:30 - 13:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 9,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "2:15 - 2:30",
+      name: `${lang === "en-US" ? "Lunch" : "Chakula cha Mchana"}`,
+      time: "13:00- 14:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 10,
-      name: `${lang === "en-US" ? "WebScrapping with Beautiful Soup" : "Kuchakachua wavuti na Beautiful Soup"}`,
-      time: "2:30 - 3:00",
+      name: `${
+        lang === "en-US"
+          ? "Using Odoo (The Python ERP Framework) to Build"
+          : "Kutumia Odoo(Mfumo wa ERP wa Python) Kutengeneza"
+      }`,
+      time: "14:00 - 14:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 11,
-      name: `${lang === "en-US" ? "Lightning Talks - Pyladies" : "Mazungumzo ya Haraka - Pyladies"}`,
-      time: "3:00 - 3:30",
+      name: `${
+        lang === "en-US"
+          ? "Fun Simple Python Programs"
+          : "Programu rahisi na za kufurahisha za Python"
+      }`,
+      time: "14:30 - 15:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 12,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "3:30 - 3:45",
+      name: `${
+        lang === "en-US"
+          ? "Building Interactive by Scratch"
+          : "Kujenga Interactive by Scratch"
+      }`,
+      time: "15:00 - 15:30",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
       id: 13,
-      name: `${lang === "en-US" ? "Lightning Talks - Pyladies" : "Mazungumzo ya Haraka - Pyladies"}`,
-      time: "3:45 - 4:15",
+      name: `${
+        lang === "en-US"
+          ? "Business Analysis with AI,Inspiring Women in AI"
+          : "Uchambuzi wa Biashara na AI,Kuhamasisha Wanawake katika AI,"
+      }`,
+      time: "15:30 - 16:00",
       details: "",
       presentor: "",
       pr_expertise: "",
-    },
+    },  
     {
       id: 14,
-      name: `${lang === "en-US" ? "Business Analysis with AI,Inspiring Women in AI,Teaching Python To Learn Python" 
-                 : "Uchambuzi wa Biashara na AI,Kuhamasisha Wanawake katika AI,Kufundisha Python ili Kujifunza Python"}`,
-      time: "4:15 - 4:45",
+      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
+      time: "16:00 - 16:15",
+      details: "",
+      presentor: "",
+      pr_expertise: "",
+    },
+   
+    {
+      id: 15,
+      name: `${
+        lang === "en-US"
+          ? "Lightning Talks - Pyladies"
+          : "Mazungumzo ya Haraka - Pyladies"
+      }`,
+      time: "16:15 - 16:45",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
     {
-      id: 15,
-      name: `${lang === "en-US" ? "Closing Keynote DG - ICT Commission" : "Keynote ya Kufunga kutoka kwa DG - ICT Commission"}`,
-      time: "4:45 - 5:00",
+      id: 16,
+      name: `${
+        lang === "en-US"
+          ? "Closing Keynote DG - ICT Commission"
+          : "Keynote ya Kufunga kutoka kwa DG - ICT Commission"
+      }`,
+      time: "16:45 - 17:00",
       details: "",
       presentor: "",
       pr_expertise: "",
     },
-
-   
+    {
+      id: 17,
+      name: `${
+        lang === "en-US" ? "PyCon Social Event" : "Tukio la Kijamii la PyCon"
+      }`,
+      time: "",
+      details: "",
+      presentor: "",
+      pr_expertise: "",
+    },
   ];
 
   const iconSVG = () => {
@@ -644,7 +688,7 @@ function Timeline({ active }) {
         </ol>
       </CSSTransition>
 
-         {/* Day 4 */}
+      {/* Day 4 */}
       <CSSTransition
         nodeRef={nodeRef}
         in={active === 4}

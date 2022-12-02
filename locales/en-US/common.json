@@ -9,6 +9,8 @@
     "ticket_title":"Grab Your Ticket Now",
     "ticket_price":"Ticket cost only 20,000 Tsh",
     "qr":"Scan QR",
-    "sms_details":"Send SMS #oda tiketi to 0747927611 and respond to follow-up SMS"
+    "sms_details":"Send SMS #oda tiketi to 0747927611 and respond to follow-up SMS",
+
+    "ticket_btn":"Chat with our chatbot"
     
 }

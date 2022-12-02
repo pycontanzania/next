@@ -71,7 +71,7 @@ function SponsorCards(props) {
       </h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
 
-      <div className="my-16 grid place-items-center gap-x-16 gap-y-8 grid-cols-4">
+      <div className="my-16 grid place-items-center grid-col sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {sponsors &&
           sponsors.map((sponsor) => (
             <a

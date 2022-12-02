@@ -17,11 +17,16 @@ function Ticket(props) {
           <Image className="w-1/2" src={QRCode} alt="QR Code" />
         </div>
       </div>
-      <div className="p-5 text-center">
-        <h2 className="my-4 font-bold">SMS</h2>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {t("sms_details")}
-        </p>
+      <div className="p-5 mb-8 text-center">
+        <a
+          href="https://wa.me/message/2DW2QWGHDACTM1"
+          aria-label="buy a ticket"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="py-4 px-8  rounded font-base bg-green-600 hover:bg-green-700 text-white "
+        >
+          {t("ticket_btn")}
+        </a>
       </div>
     </div>
   );
