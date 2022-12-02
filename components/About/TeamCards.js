@@ -50,7 +50,7 @@ function TeamCards(props) {
     },
     {
       name: "Albert",
-      role: `${locale === 'en-US' ? 'Web Dev (Frontend)': 'Web Dev (Frontend)'}`,
+      role: `${locale === 'en-US' ? 'Frontend Developer': 'Frontend Developer'}`,
       img: Albert,
       linkedin: "https://www.linkedin.com/in/albertsigsbert/",
       twitter: "https://twitter.com/albert_sigsbert",
@@ -58,10 +58,10 @@ function TeamCards(props) {
     },
    
     {
-      name: "Mojo",
-      role: `${locale === 'en-US' ? 'Web Dev (Backend)': 'Web Dev (Backend)'}`,
+      name: "Fuad Habib",
+      role: `${locale === 'en-US' ? 'Backend Developer': 'Backend Developer'}`,
       img: Mojo,
-      linkedin: "https://fuadhabib.xyz",
+      linkedin: "https://github.com/AvicennaJr",
       twitter: "https://twitter.com/AviTheDev",
       insta: "",
     },
