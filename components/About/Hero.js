@@ -6,7 +6,7 @@ function Hero(props) {
 
   return (
     <section>
-      <h1 className="text-4xl font-bold font-base text-center">Pycon 2022</h1>
+      <h1 className="text-4xl font-bold font-base text-center">PyCon 2022</h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
 
       <div className="my-20 grid lg:grid-cols-2 gap-16">
@@ -28,7 +28,7 @@ function Hero(props) {
             {t("desc")}
           </p>
 
-          <h2 className="font-bold text-2xl">Pycon 2022</h2>
+          <h2 className="font-bold text-2xl">PyCon 2022</h2>
           <div className="my-4 flex flex-wrap items-center gap-16 md:gap-8">
             <div className="flex items-center">
               <div className="mr-4 inline-flex items-center p-3  text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">

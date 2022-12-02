@@ -5,10 +5,8 @@ import Noah from "../../public/img/team/noah.png";
 import CR from "../../public/img/team/cr.png";
 import Mtuchi from "../../public/img/team/mtuchi.png";
 import Julius from "../../public/img/team/julius.png";
-import Zephania from "../../public/img/team/zephania.png";
-import Davis from "../../public/img/team/davis.png";
-import Zee from "../../public/img/team/zee.png";
-import James from "../../public/img/team/james.png";
+import Albert from "../../public/img/team/albert.jpg";
+import Mojo from "../../public/img/team/mojo.jpg";
 import Lupyana from "../../public/img/team/lupyana.png";
 
 function TeamCards(props) {
@@ -49,37 +47,23 @@ function TeamCards(props) {
       insta: "",
     },
     {
-      name: "Zephania",
-      role: `${locale === 'en-US' ? 'Transport': 'Usafiri'}`,
-      img: Zephania,
-      linkedin: "https://www.linkedin.com/in/zephania-reuben-a42233185/",
-      twitter: "https://twitter.com/nsomazr",
+      name: "Albert",
+      role: `${locale === 'en-US' ? 'Web Dev (Frontend)': 'Web Dev (Frontend)'}`,
+      img: Albert,
+      linkedin: "https://www.linkedin.com/in/albertsigsbert/",
+      twitter: "https://twitter.com/albert_sigsbert",
       insta: "",
     },
+   
     {
-      name: "Davis",
-      role: `${locale === 'en-US' ? 'Speakers Dept': 'Idara ya Wazungumzaji'}`,
-      img: Davis,
-      linkedin: "https://www.linkedin.com/in/davis-david-783461124/",
-      twitter: "https://twitter.com/Davis_McDavid",
+      name: "Mojo",
+      role: `${locale === 'en-US' ? 'Web Dev (Backend)': 'Web Dev (Backend)'}`,
+      img: Mojo,
+      linkedin: "https://fuadhabib.xyz",
+      twitter: "https://twitter.com/AviTheDev",
       insta: "",
     },
-    {
-      name: "Zee",
-      role: `${locale === 'en-US' ? 'Outreach': 'Ufikiaji'}`,
-      img: Zee,
-      linkedin: "https://www.linkedin.com/in/zeenath-abdulaziz-68ab4991/",
-      twitter: "https://twitter.com/zee_sherally",
-      insta: "",
-    },
-    {
-      name: "James",
-      role: `${locale === 'en-US' ? 'Logistics': 'Vifaa'}`,
-      img: James,
-      linkedin: "https://www.linkedin.com/in/james-julius-a46baa75",
-      twitter: "",
-      insta: "",
-    },
+   
     {
       name: "Lupyana",
       role: `${locale === 'en-US' ? 'Promotional Materials': 'Vifaa vya Utangazaji'}`,
