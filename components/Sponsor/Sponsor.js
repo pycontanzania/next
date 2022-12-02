@@ -5,8 +5,8 @@ import useTranslation from "next-translate/useTranslation";
 function Sponsor(props) {
   const { t, lang } = useTranslation("sponsors");
   return (
-    <section className="my-8">
-      <h1 className="text-4xl font-bold font-base text-center capitalize">
+    <section className="my-16">
+      <h1 className="text-2xl md:text-4xl font-bold font-base text-center capitalize">
         {t("title")}
       </h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />

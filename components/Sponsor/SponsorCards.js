@@ -80,7 +80,7 @@ function SponsorCards(props) {
   const { t, lang } = useTranslation("sponsors");
   return (
     <>
-      <h1 className="text-4xl font-bold font-base text-center capitalize">
+      <h1 className="text-2xl md:text-4xl font-bold font-base text-center capitalize">
       { lang === 'en-US' ? 'Sponsors' :'Wafadhili'}
       </h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />
@@ -90,7 +90,7 @@ function SponsorCards(props) {
           sponsors.map((sponsor) => (
             <a
               key={sponsor.id}
-              className="relative h-64 w-64"
+              className="relative h-32 w-32 md:h-64 md:w-64"
               href={sponsor.url}
               target="_blank"
               rel="noopener noreferrer"

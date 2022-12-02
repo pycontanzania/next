@@ -23,7 +23,7 @@ function Timeline(props) {
   const { t, lang } = useTranslation("speak");
   return (
     <aside className="">
-      <h1 className="font-bold text-2xl">{t("timeline_title")}</h1>
+      <h1 className="font-bold text-2xl my-4">{t("timeline_title")}</h1>
       <div className="h-max md:my-8 p-8 py-16 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           <li className="mb-10 ml-6">

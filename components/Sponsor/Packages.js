@@ -14,8 +14,8 @@ function Packages(props) {
     
   }; 
   return (
-    <section className="mb-32">
-      <h1 className="text-4xl font-bold font-base text-center capitalize">
+    <section className="mt-16 mb-32">
+      <h1 className="text-2xl md:text-4xl font-bold font-base text-center capitalize">
         {t("package_title")}
       </h1>
       <hr className="block h-px w-1/4 md:w-1/12 mt-4 mx-auto border-green-800" />

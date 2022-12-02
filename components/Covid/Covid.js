@@ -96,7 +96,7 @@ function Covid(props) {
 
       <div className="grid place-items-center mt-8 mb-24">
         <h1 className="italic">{t("source")}</h1>
-        <ul className="flex flex-wrap">
+        <ul className="flex flex-wrap justify-center">
           <li className="mr-8">
             <a
               href="https://www.moh.go.tz/en/covid-19-info"

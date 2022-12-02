@@ -12,7 +12,7 @@ function Countdown(props) {
   const [mounted, setMounted] = useState(false);
 
   const counter = () => {
-    const eventDate = new Date("Dec 5, 2022 07:00:00").getTime();
+    const eventDate = new Date("Dec 5, 2022 09:00:00").getTime();
     const now = new Date().getTime();
 
     const gap = eventDate - now;
@@ -58,7 +58,7 @@ function Countdown(props) {
     <div>
       <p className="text-gray-400 font-medium">
       {t("hero_countdown")}:{" "}
-        <span className="text-green-600 text-2xl">
+        <span className="text-green-600 text-xl md:text-2xl">
           {days}d {hours}h {mins}m {secs}s
         </span>
       </p>
