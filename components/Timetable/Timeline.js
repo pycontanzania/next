@@ -205,14 +205,13 @@ function Timeline({ active }) {
       id: 2,
       name: `${
         lang === "en-US"
-          ? "Why is Data Science Necessary, Why Now?"
-          : "Kwa nini Sayansi ya Data Inahitajika, Kwa Nini Sasa?"
+          ? "Time Series Forecasting with Python"
+          : "Utabiri wa Mfuatano wa Wakati na Python"
       }`,
       time: "09:30 - 10:00",
-      details: "",
-      presentor: "Hassan Kibirige"
+      details: "TIGO",
+      presentor: "Newton Mwalongo"
     },
-
     {
       id: 3,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
@@ -224,56 +223,58 @@ function Timeline({ active }) {
       id: 4,
       name: `${
         lang === "en-US"
-          ? "Species Determination of Malaria Vectors Using AI"
-          : "Ugunduzi wa Aina za Vekta za Malaria Kwa Kutumia AI"
+          ? "Why is Data Science Necessary, Why Now?"
+          : "Kwa nini Sayansi ya Data Inahitajika, Kwa Nini Sasa?"
       }`,
       time: "10:30 - 11:00",
       details: "",
-      presentor: "Issa Mshani"
+      presentor: "Hassan Kibirige"
     },
+
+    
     {
       id: 5,
       name: `${
         lang === "en-US"
-          ? "Analyzing the Development of Cervical Cancer (ML)"
-          : "Uchambuzi wa ukuzi wa saratani ya Shingo ya Kizazi (ML)"
+          ? "Species Determination of Malaria Vectors Using AI"
+          : "Ugunduzi wa Aina za Vekta za Malaria Kwa Kutumia AI"
       }`,
       time: "11:00 - 11:30",
       details: "",
-      presentor: "Eng.Saida Nyasasi"
+      presentor: "Issa Mshani"
     },
     {
       id: 6,
       name: `${
         lang === "en-US"
-          ? "Explainability for Natural Language Processing"
-          : "Ufafanuzi wa Uchakataji Lugha Asilia"
+          ? "Analyzing the Development of Cervical Cancer (ML)"
+          : "Uchambuzi wa ukuzi wa saratani ya Shingo ya Kizazi (ML)"
       }`,
       time: "11:30 - 12:00",
       details: "",
-      presentor: "Antony Mipawa"
+      presentor: "Eng.Saida Nyasasi"
     },
     {
       id: 7,
       name: `${
         lang === "en-US"
-          ? "Poultry Disease Diagnosis with Deep Learning"
-          : "Utambuzi wa Ugonjwa wa Kuku kwa kutumia Deep Learning"
+          ? "Explainability for Natural Language Processing"
+          : "Ufafanuzi wa Uchakataji Lugha Asilia"
       }`,
       time: "12:00 - 12:30",
       details: "",
-      presentor: "Dr.Dina Machuve"
+      presentor: "Antony Mipawa"
     },
     {
       id: 8,
       name: `${
         lang === "en-US"
-          ? "Predicting Fake News Using GCN"
-          : "Kutabiri Habari za Uongo Kwa Kutumia GCN"
+          ? "Poultry Disease Diagnosis with Deep Learning"
+          : "Utambuzi wa Ugonjwa wa Kuku kwa kutumia Deep Learning"
       }`,
       time: "12:30 - 13:00",
       details: "",
-      presentor: "Zephania Reuben"
+      presentor: "Dr.Dina Machuve"
     },
     {
       id: 9,
@@ -285,43 +286,55 @@ function Timeline({ active }) {
     {
       id: 10,
       name: `${
-        lang === "en-US" ? "Open Source Is Not Free" : "Chanzo Huria Sio Bure"
+        lang === "en-US"
+          ? "Predicting Fake News Using GCN"
+          : "Kutabiri Habari za Uongo Kwa Kutumia GCN"
       }`,
       time: "14:00 - 14:30",
       details: "",
-      presentor: "Kalebu Jordan"
+      presentor: "Zephania Reuben"
     },
+   
     {
       id: 11,
       name: `${
-        lang === "en-US"
-          ? "Transformers and Self Attention"
-          : "Waleta mabadiliko na Kujijali"
+        lang === "en-US" ? "Open Source Is Not Free" : "Chanzo Huria Sio Bure"
       }`,
       time: "14:30 - 15:00",
       details: "",
-      presentor: "Isack Odero"
+      presentor: "Kalebu Jordan"
     },
     {
       id: 12,
       name: `${
         lang === "en-US"
+          ? "Transformers and Self Attention"
+          : "Waleta mabadiliko na Kujijali"
+      }`,
+      time: "15:00 - 15:30",
+      details: "",
+      presentor: "Isack Odero"
+    },
+    {
+      id: 13,
+      name: `${
+        lang === "en-US"
           ? "Panel Discussion on DS/ML/AI"
           : "Majadiliano ya Paneli kuhusu DS/ML/AI"
       }`,
-      time: "15:00 - 16:00",
+      time: "15:30 - 16:00",
       details: "",
       presentor: "Issa Mshani & Eng.Saida Nyasasi"
     },
     {
-      id: 13,
+      id: 14,
       name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
       time: "16:00 - 16:15",
       details: "",
       presentor: ""
     },
     {
-      id: 14,
+      id: 15,
       name: `${lang === "en-US" ? "Lightning Talks" : "Mazungumzo ya Haraka"}`,
       time: "16:15 - 17:15",
       details: "Pycon",
