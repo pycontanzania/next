@@ -9,6 +9,8 @@ import k15 from "../../public/img/sponsors/k15.png";
 import wia from "../../public/img/sponsors/wiacom.png";
 import maisha from "../../public/img/sponsors/maishabroadband.png";
 import Flashnet from "../../public/img/sponsors/flashnet.png";
+import Binary from "../../public/img/sponsors/red.png";
+import Irabu from "../../public/img/sponsors/irabu.png";
 
 const sponsors = [
   {
@@ -58,6 +60,18 @@ const sponsors = [
     name: "Flashnet",
     url: "https://flashnet.co.tz/",
     image: Flashnet,
+  },
+  {
+    id: 9,
+    name: "Binary",
+    url: "https://bit.africa/",
+    image: Binary,
+  },
+  {
+    id: 10,
+    name: "Flashnet",
+    url: "https://flashnet.co.tz/",
+    image: Irabu,
   },
  
 ];

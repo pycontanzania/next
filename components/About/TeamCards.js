@@ -8,6 +8,8 @@ import Julius from "../../public/img/team/julius.png";
 import Albert from "../../public/img/team/albert.jpg";
 import Mojo from "../../public/img/team/mojo.jpg";
 import Lupyana from "../../public/img/team/lupyana.png";
+import Jacq from "../../public/img/team/jacq.jpg";
+
 
 function TeamCards(props) {
   const router = useRouter();
@@ -71,6 +73,14 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/lupyana/",
       twitter: "",
       insta: "https://www.instagram.com/lupyanambembati/",
+    },
+    {
+      name: "Jacqueline",
+      role: `${locale === 'en-US' ? 'Secretariat - Logistics': 'Sekretarieti - Vifaa'}`,
+      img:Jacq ,
+      linkedin: "https://www.linkedin.com/in/jacqueline-joseph-mushi-79675660/",
+      twitter: "",
+      insta: "",
     },
   ];
   return (
