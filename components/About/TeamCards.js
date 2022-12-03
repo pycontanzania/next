@@ -9,6 +9,7 @@ import Albert from "../../public/img/team/albert.jpg";
 import Mojo from "../../public/img/team/mojo.jpg";
 import Lupyana from "../../public/img/team/lupyana.png";
 import Jacq from "../../public/img/team/jacq.jpg";
+import Masoud from "../../public/img/team/masoud.jpg";
 
 
 function TeamCards(props) {
@@ -87,6 +88,15 @@ function TeamCards(props) {
       img:Jacq ,
       linkedin: "https://www.linkedin.com/in/jacqueline-joseph-mushi-79675660/",
       twitter: "",
+      insta: "",
+      github:""
+    },
+    {
+      name: "Masoud Hamad",
+      role: `${locale === 'en-US' ? 'Secretariat': 'Sekretarieti'}`,
+      img:Masoud,
+      linkedin: "",
+      twitter: "https://twitter.com/lsmassoudhamad",
       insta: "",
       github:""
     },
