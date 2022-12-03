@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter, FaInstagram, FaGithub } from "react-icons/fa";
 import Noah from "../../public/img/team/noah.png";
 import CR from "../../public/img/team/cr.png";
 import Mtuchi from "../../public/img/team/mtuchi.png";
@@ -23,6 +23,7 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/mainamukhangunoah/",
       twitter: "",
       insta: "",
+      github:""
     },
     {
       name: "CatherineRose Barretto",
@@ -31,6 +32,7 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/catherinerose-barretto/",
       twitter: "https://twitter.com/CRBarretto",
       insta: "https://www.instagram.com/crbarretto/",
+      github:""
     },
     {
       name: "Mtuchi",
@@ -39,6 +41,7 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/mtuchi/",
       twitter: "htts://twitter.com/mtuchidev",
       insta: "",
+      github:""
     },
     {
       name: "Julius TM",
@@ -47,6 +50,7 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/juliustm/",
       twitter: "https://twitter.com/juliusmoshiro",
       insta: "",
+      github:""
     },
     {
       name: "Albert",
@@ -55,15 +59,17 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/albertsigsbert/",
       twitter: "https://twitter.com/albert_sigsbert",
       insta: "",
+      github:"https://github.com/AlbertSigsbert"
     },
    
     {
-      name: "Fuad Habib",
+      name: "Fuad",
       role: `${locale === 'en-US' ? 'Backend Developer': 'Backend Developer'}`,
       img: Mojo,
-      linkedin: "https://github.com/AvicennaJr",
+      linkedin: "",
       twitter: "https://twitter.com/AviTheDev",
       insta: "",
+      github:"https://github.com/AvicennaJr"
     },
    
     {
@@ -73,6 +79,7 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/lupyana/",
       twitter: "",
       insta: "https://www.instagram.com/lupyanambembati/",
+      github:""
     },
     {
       name: "Jacqueline",
@@ -81,6 +88,7 @@ function TeamCards(props) {
       linkedin: "https://www.linkedin.com/in/jacqueline-joseph-mushi-79675660/",
       twitter: "",
       insta: "",
+      github:""
     },
   ];
   return (
@@ -129,6 +137,17 @@ function TeamCards(props) {
                     className="px-2 cursor-pointer transition ease-in-out delay-100 hover:scale-110 duration-100"
                   >
                     <FaInstagram />
+                  </a>
+                )}
+                {member.github && (
+                  <a
+                    href={member.github}
+                    aria-label={`${member.name}'s Github`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 cursor-pointer transition ease-in-out delay-100 hover:scale-110 duration-100"
+                  >
+                    <FaGithub/>
                   </a>
                 )}
               </div>
