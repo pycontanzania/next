@@ -28,11 +28,18 @@ function Countdown(props) {
     const totalHours = Math.floor((gap % day) / hour);
     const totalMins = Math.floor((gap % hour) / minute);
     const totalSecs = Math.floor((gap % minute) / second);
-
-    setDays(totalDays);
-    setHours(totalHours);
-    setMins(totalMins);
-    setSecs(totalSecs);
+    
+    if(totalDays > 0){
+      setDays(totalDays);
+      setHours(totalHours);
+      setMins(totalMins);
+      setSecs(totalSecs);
+    }
+    setDays(0);
+    setHours(0);
+    setMins(0);
+    setSecs(0);
+   
 
   };
 
