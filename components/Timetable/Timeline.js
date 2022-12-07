@@ -194,13 +194,7 @@ function Timeline({ active }) {
   ];
 
   const thirdDay = [
-    {
-      id: 1,
-      name: `${lang === "en-US" ? "Keynote" : "Maelezo muhimu"}`,
-      time: "09:00 - 09:30",
-      details: "Python Software Foundation",
-      presentor: "Loren Crary"
-    },
+   
     {
       id: 2,
       name: `${
@@ -478,27 +472,35 @@ function Timeline({ active }) {
       details: "",
       presentor: ""
     },
-    {
-      id: 14,
-      name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
-      time: "16:00 - 16:15",
-      details: "",
-      presentor: ""
-    },
+   
+    // {
+    //   id: 14,
+    //   name: `${lang === "en-US" ? "Break" : "Mapumziko"}`,
+    //   time: "16:00 - 16:15",
+    //   details: "",
+    //   presentor: ""
+    // },
 
     {
       id: 15,
+      name: `${lang === "en-US" ? "Is the Python Software Foundation like a Lighthouse?" : "Je! Python Software Foundation ni kama mnara wa taa?"}`,
+      time: "16:00 - 16:30",
+      details: `${lang === "en-US" ? "What role does the PSF play in the Python ecosystem and why?":"PSF inachukua jukumu gani katika mfumo wa ikolojia wa Python na kwa nini?"}`,
+      presentor: "Loren Crary"
+    },
+    {
+      id: 16,
       name: `${
         lang === "en-US"
           ? "Lightning Talks - Pyladies"
           : "Mazungumzo ya Haraka - Pyladies"
       }`,
-      time: "16:15 - 16:45",
+      time: "16:30 - 16:45",
       details: "",
       presentor: ""
     },
     {
-      id: 16,
+      id: 17,
       name: `${
         lang === "en-US"
           ? "Closing Keynote DG - ICT Commission"
